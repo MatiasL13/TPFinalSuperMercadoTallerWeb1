@@ -30,6 +30,7 @@ public class Carrito {
      */
     public void agregarProducto(Producto producto) {
         // Implementar
+    	 this.productos.add(producto);
     }
 
     /**
@@ -48,7 +49,7 @@ public class Carrito {
      */
     public List<Producto> verProductos() {
         // Implementar
-        return null;
+        return this.productos;
     }
 
     /**

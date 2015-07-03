@@ -4,6 +4,7 @@ public class Producto {
 
     private String nombre;
     private Double precio;
+    private Integer id;
     
     public String getNombre() {
         return nombre;
@@ -16,5 +17,11 @@ public class Producto {
     }
     public void setPrecio(Double precio) {
         this.precio = precio;
+    }
+    public Integer getId() {
+        return id;
+    }
+    public void setId(Integer id) {
+        this.id = id;
     }
 }
