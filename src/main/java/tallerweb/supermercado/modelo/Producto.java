@@ -1,12 +1,11 @@
 package tallerweb.supermercado.modelo;
 
 public class Producto {
-
-    @Override // Equals y hashcode solo en el ID para poder encontrar el producto
+	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
 		return result;
 	}
 	@Override
@@ -18,16 +17,16 @@ public class Producto {
 		if (getClass() != obj.getClass())
 			return false;
 		Producto other = (Producto) obj;
-		if (id == null) {
-			if (other.id != null)
+		if (nombre == null) {
+			if (other.nombre != null)
 				return false;
-		} else if (!id.equals(other.id))
+		} else if (!nombre.equals(other.nombre))
 			return false;
 		return true;
 	}
 	private String nombre;
     private Double precio;
-    private Integer id;
+    //private Integer id;
     
     public String getNombre() {
         return nombre;
@@ -41,10 +40,10 @@ public class Producto {
     public void setPrecio(Double precio) {
         this.precio = precio;
     }
-    public Integer getId() {
+  /*  public Integer getId() {
         return id;
     }
     public void setId(Integer id) {
         this.id = id;
-    }
+    }*/
 }

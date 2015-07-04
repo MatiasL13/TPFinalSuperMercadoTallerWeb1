@@ -24,7 +24,6 @@
         <form:input  class="form-control"path="precio"></form:input>
     </div>
    
-    <form:input type="hidden"class="form-control" path="id" value="${dato.id}"></form:input>
             <input class="btn btn-success" type="submit" value="Agregar Producto">
       
      

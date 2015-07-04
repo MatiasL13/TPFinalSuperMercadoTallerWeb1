@@ -30,7 +30,7 @@
 		<td>Precio</td>
 		<td>Cantidad</td>
 		<td>Controles</td>
-		<td>Agregar Stock</td>
+		<td>Manejo de Stock</td>
 	</tr>
 	<c:forEach  items="${stock}" var="dato">
 	<tr>
@@ -39,18 +39,25 @@
 		<td>${dato.value}</td>
 		<td>
 			    <form:form method="post" action="eliminarProductoStock" class="col-md-12" >
-			        <form:input type="hidden"class="form-control" path="id" value="${dato.key.id}"></form:input>
+			        <form:input type="hidden"class="form-control" path="nombre" value="${dato.key.nombre}"></form:input>
 					<input class="btn btn-danger col-md-12 " type="submit" value="Eliminar">
 				</form:form>
 		</td>
 		<td>
 			  
-			    <form:form method="post" action="agregarStock" class="col-md-12" >
-			    	<div class="form-group col-md-5">
+			    <form:form method="post" action="agregarStock" class="manejoStock" >
+			    	<div class="form-group col-md-2">
         				<input  class="form-control"name="cantidad"/>
    					 </div>
-			        <form:input type="hidden"class="form-control" path="id" value="${dato.key.id}"></form:input>
-					<input class="btn btn-info col-md-3" type="submit" value="+">
+			        <form:input type="hidden"class="form-control" path="nombre" value="${dato.key.nombre}"></form:input>
+					<input class="btn btn-info col-md-1" type="submit" value="+">
+			    </form:form>
+			    <form:form method="post" action="eliminarStock" class="manejoStock" >
+			    	<div class="form-group col-md-2">
+        				<input  class="form-control"name="cantidad"/>
+   					 </div>
+			        <form:input type="hidden"class="form-control" path="nombre" value="${dato.key.nombre}"></form:input>
+					<input class="btn btn-danger col-md-1" type="submit" value="-">
 			    </form:form>
 		</td>
 	</tr>

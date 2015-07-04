@@ -42,18 +42,18 @@ public class StockController {
 	@RequestMapping(value = "/agregar/ingresar", method = RequestMethod.POST)
     public String addContact(@ModelAttribute("producto")
                             Producto producto, BindingResult result) {
-		Integer id = 0;
+		//Integer id = 0;
 		//id = TablaPersonas.getInstance().total();
-		for (Producto ele :  Stock.getInstance().listarProductosDisponibles())
+	/*	for (Producto ele :  Stock.getInstance().listarProductosDisponibles())
 		{
 			if (ele.getId() >= id )
 				id = ele.getId() + 1;
-		}
+		}*/
 		/*if(producto.getId() != null){
 			TablaPersonas.getInstance().modificarPersona(producto);
 		}
 		else{*/
-			producto.setId(id);
+			//producto.setId(id);
 			Stock.getInstance().agregarProducto(producto);
 		//}
         return "redirect:/stock/ver";
@@ -75,5 +75,14 @@ public class StockController {
 		Stock.getInstance().agregarStock(producto,cantidad);
 		return "redirect:/stock/ver";
 	}
+	@RequestMapping(value = "/eliminarStock", method = RequestMethod.POST)
+	public String eliminarStock(@ModelAttribute("producto")	Producto producto, // se envia la clase Producto 
+								@RequestParam("cantidad") Integer cantidad, // se envia el paramtro cantidad
+								BindingResult result){
+		
+		Stock.getInstance().comprarProducto(producto,cantidad);
+		return "redirect:/stock/ver";
+	}
+	
 
 }
