@@ -52,11 +52,11 @@
 	</table>
 
 
+<button class="btn btn-success col-md-2 col-md-offset-9 "><a href="/sitio/test/persona/crear">agregar Producto</a></button>
 	</div>
 </div>
 
 
-<button class="btn btn-success col-md-2 col-md-offset-9 "><a href="/sitio/test/persona/crear">agregar Producto</a></button>
 
 </body>
 </html>

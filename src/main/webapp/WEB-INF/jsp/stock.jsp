@@ -21,7 +21,7 @@
 </nav>
 <div>
 <div>
-	<legend>Productos en carrito</legend>
+	<legend>Productos en Stock</legend>
 </div>
 	<div class="col-md-10 col-md-offset-1 center">
 	<table class="table">
@@ -29,21 +29,28 @@
 		<td>Nombre</td>
 		<td>Precio</td>
 		<td>Cantidad</td>
-		<td></td>
+		<td>Controles</td>
+		<td>Agregar Stock</td>
 	</tr>
 	<c:forEach  items="${stock}" var="dato">
 	<tr>
-		<td>${dato.nombre}</td>
-		<td>${dato.precio}</td>
-		<td>${dato.precio}</td>
+		<td>${dato.key.nombre}</td>
+		<td>${dato.key.precio}</td>
+		<td>${dato.value}</td>
 		<td>
-			    <form:form method="post" action="deleteContact.html" class="col-md-6" >
-			        <form:input type="hidden"class="form-control" path="id" value="${dato.id}"></form:input>
+			    <form:form method="post" action="eliminarProductoStock" class="col-md-12" >
+			        <form:input type="hidden"class="form-control" path="id" value="${dato.key.id}"></form:input>
 					<input class="btn btn-danger col-md-12 " type="submit" value="Eliminar">
-			    </form:form>
-			    <form:form method="post" action="crear" class="col-md-6" >
-			        <form:input type="hidden"class="form-control" path="id" value="${dato.id}"></form:input>
-					<input class="btn btn-info col-md-12" type="submit" value="Modificar">
+				</form:form>
+		</td>
+		<td>
+			  
+			    <form:form method="post" action="agregarStock" class="col-md-12" >
+			    	<div class="form-group col-md-5">
+        				<input  class="form-control"name="cantidad"/>
+   					 </div>
+			        <form:input type="hidden"class="form-control" path="id" value="${dato.key.id}"></form:input>
+					<input class="btn btn-info col-md-3" type="submit" value="+">
 			    </form:form>
 		</td>
 	</tr>
@@ -52,11 +59,11 @@
 	</table>
 
 
+<button class="btn btn-success col-md-2 col-md-offset-9 "><a href="<%=request.getContextPath()%>/stock/agregar">agregar Producto</a></button>
 	</div>
 </div>
 
 
-<button class="btn btn-success col-md-2 col-md-offset-9 "><a href="<%=request.getContextPath()%>/stock/agregar">agregar Producto</a></button>
 
 </body>
 </html>

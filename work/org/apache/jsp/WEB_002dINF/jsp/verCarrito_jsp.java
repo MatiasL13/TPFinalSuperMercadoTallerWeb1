@@ -112,11 +112,11 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t</table>\n");
       out.write("\n");
       out.write("\n");
+      out.write("<button class=\"btn btn-success col-md-2 col-md-offset-9 \"><a href=\"/sitio/test/persona/crear\">agregar Producto</a></button>\n");
       out.write("\t</div>\n");
       out.write("</div>\n");
       out.write("\n");
       out.write("\n");
-      out.write("<button class=\"btn btn-success col-md-2 col-md-offset-9 \"><a href=\"/sitio/test/persona/crear\">agregar Producto</a></button>\n");
       out.write("\n");
       out.write("</body>\n");
       out.write("</html>");
