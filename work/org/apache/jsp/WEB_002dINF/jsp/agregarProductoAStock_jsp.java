@@ -13,6 +13,7 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
 
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fclass_005faction;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005flabel_0026_005fpath;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005finput_0026_005fpath_005fclass_005fautofocus_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005finput_0026_005fpath_005fclass_005fnobody;
 
   private javax.el.ExpressionFactory _el_expressionfactory;
@@ -25,6 +26,7 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
   public void _jspInit() {
     _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fclass_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fform_005flabel_0026_005fpath = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fform_005finput_0026_005fpath_005fclass_005fautofocus_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fform_005finput_0026_005fpath_005fclass_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
@@ -33,6 +35,7 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
   public void _jspDestroy() {
     _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fclass_005faction.release();
     _005fjspx_005ftagPool_005fform_005flabel_0026_005fpath.release();
+    _005fjspx_005ftagPool_005fform_005finput_0026_005fpath_005fclass_005fautofocus_005fnobody.release();
     _005fjspx_005ftagPool_005fform_005finput_0026_005fpath_005fclass_005fnobody.release();
   }
 
@@ -205,9 +208,11 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:input
-    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f0 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fpath_005fclass_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
+    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f0 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fpath_005fclass_005fautofocus_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(19,8) null
+    _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "autofocus", new String("true"));
     // /WEB-INF/jsp/agregarProductoAStock.jsp(19,8) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "class", new String("form-control"));
     // /WEB-INF/jsp/agregarProductoAStock.jsp(19,8) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
@@ -224,7 +229,7 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
       _jspx_th_form_005finput_005f0.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_005finput_005f0.doFinally();
-      _005fjspx_005ftagPool_005fform_005finput_0026_005fpath_005fclass_005fnobody.reuse(_jspx_th_form_005finput_005f0);
+      _005fjspx_005ftagPool_005fform_005finput_0026_005fpath_005fclass_005fautofocus_005fnobody.reuse(_jspx_th_form_005finput_005f0);
     }
     return false;
   }

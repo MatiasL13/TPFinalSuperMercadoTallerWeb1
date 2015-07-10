@@ -20,7 +20,7 @@ public class Carrito {
      * Elimina todos los productos del carrito.<br>
      */
     public void vaciar() {
-        // Implementar
+       this.productos.clear();
     }
 
     /**

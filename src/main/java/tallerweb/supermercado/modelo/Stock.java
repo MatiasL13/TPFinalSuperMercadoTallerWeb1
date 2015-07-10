@@ -98,13 +98,22 @@ public class Stock {
 	 * @param unidades
 	 * @return true en caso de exito, false si el producto no existe en el stock.<br>
 	 */
-	public Boolean comprarProducto(Producto producto, Integer unidades){
+	public Integer comprarProducto(Producto producto, Integer unidades){
 		if(!this.stock.containsKey(producto)){
-			return false;
+			return 0;
 		}
-		Integer nuevaCantidad = this.stock.get(producto) - unidades;
-		this.stock.put(producto, nuevaCantidad);
-		return true;
+		while(unidades > 0 )
+		{
+			if(0 <= this.stock.get(producto) - unidades){
+				Integer nuevaCantidad = this.stock.get(producto) - unidades;
+				this.stock.put(producto, nuevaCantidad);
+				return unidades;
+			}
+			else
+				unidades--;
+		}
+		return unidades;
+		
 	}
 	
 	/**

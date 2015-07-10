@@ -66,7 +66,7 @@
 	</table>
 
 
-<button class="btn btn-success col-md-2 col-md-offset-9 "><a href="<%=request.getContextPath()%>/stock/agregar">agregar Producto</a></button>
+<a  class="btn btn-success col-md-2 col-md-offset-9 " href="<%=request.getContextPath()%>/stock/agregar">agregar Producto</a>
 	</div>
 </div>
 

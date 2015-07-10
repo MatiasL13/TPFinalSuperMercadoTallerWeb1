@@ -16,7 +16,7 @@
  
    <div class="form-group">
    <form:label path="nombre">nombre</form:label>
-        <form:input  class="form-control"path="nombre"></form:input> 
+        <form:input autofocus="true" class="form-control"path="nombre"></form:input> 
     </div>
         
         

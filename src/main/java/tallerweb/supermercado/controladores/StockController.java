@@ -40,7 +40,7 @@ public class StockController {
 	}
 	
 	@RequestMapping(value = "/agregar/ingresar", method = RequestMethod.POST)
-    public String addContact(@ModelAttribute("producto")
+    public String agregarAStock(@ModelAttribute("producto")
                             Producto producto, BindingResult result) {
 		//Integer id = 0;
 		//id = TablaPersonas.getInstance().total();

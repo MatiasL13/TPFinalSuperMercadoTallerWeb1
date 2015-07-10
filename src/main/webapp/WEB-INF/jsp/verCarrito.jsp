@@ -28,31 +28,21 @@
 	<tr>
 		<td>Nombre</td>
 		<td>Precio</td>
-		<td></td>
-		<td></td>
-		<td></td>
 	</tr>
-	<c:forEach  items="${personas}" var="dato">
+	<c:forEach  items="${productos}" var="dato">
 	<tr>
 		<td>${dato.nombre}</td>
 		<td>${dato.precio}</td>
-		<td>
-			    <form:form method="post" action="deleteContact.html" class="col-md-6" >
-			        <form:input type="hidden"class="form-control" path="id" value="${dato.id}"></form:input>
-					<input class="btn btn-danger col-md-12 " type="submit" value="Eliminar">
-			    </form:form>
-			    <form:form method="post" action="crear" class="col-md-6" >
-			        <form:input type="hidden"class="form-control" path="id" value="${dato.id}"></form:input>
-					<input class="btn btn-info col-md-12" type="submit" value="Modificar">
-			    </form:form>
-		</td>
+
 	</tr>
 	</c:forEach>
 
 	</table>
 
-
-<button class="btn btn-success col-md-2 col-md-offset-9 "><a href="/sitio/test/persona/crear">agregar Producto</a></button>
+		 <div class= "col-md-6 col-md-offset-9">
+			<a  class="btn btn-success col-md-3 opcionesCarrito" href="<%=request.getContextPath()%>/carrito/listarProductos">agregar Producto</a>
+			<a href="<%=request.getContextPath()%>/carrito/vaciar" class="btn btn-danger col-md-3 opcionesCarrito">Cancelar</a>
+		</div>
 	</div>
 </div>
 
