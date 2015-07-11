@@ -28,8 +28,9 @@
 
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<p id="msjError00" class="bg-danger hidden"><span class="glyphicon glyphicon-warning-sign"></span><span id="msjError00Text"> </span></p>
-			<p id="msjOK" class="bg-danger hidden"><span class="glyphicon glyphicon-warning-sign"></span> </p>
+			<p id="msjError00" class="bg-danger text-center hidden">
+			</p>
+			<p id="msjOK" class="bg-danger text-center hidden"><span class="glyphicon glyphicon-warning-sign"></span> </p>
 		</div>
 	</div>
 	<div class="col-md-10 col-md-offset-1 center">
