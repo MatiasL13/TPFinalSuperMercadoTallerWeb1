@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import tallerweb.supermercado.modelo.Carrito;
+import tallerweb.supermercado.modelo.Descuento;
 import tallerweb.supermercado.modelo.Producto;
 import tallerweb.supermercado.modelo.Stock;
 
@@ -64,6 +65,21 @@ public class CarritoController {
 			Stock.getInstance().agregarStock(ele, 1);
 		}
 				Carrito.getInstance().vaciar();
+        return "redirect:/carrito/ver";
+    }
+	
+	@RequestMapping(value = "/agregar/descuento", method = RequestMethod.POST)
+    public String aplicarDescuento(@RequestParam("tipo")	String tipo, // se envia la clase Producto 
+    								@RequestParam("cantidad") Double cantidad, // se envia el paramtro cantidad
+    								BindingResult result){
+		Descuento descuento = new Descuento();
+		if(tipo == "porcentaje")
+			descuento.setPorcentaje(cantidad);
+			
+		else
+			descuento.setMonto(cantidad);
+		Carrito.getInstance().aplicarDescuento(descuento);
+		
         return "redirect:/carrito/ver";
     }
 	

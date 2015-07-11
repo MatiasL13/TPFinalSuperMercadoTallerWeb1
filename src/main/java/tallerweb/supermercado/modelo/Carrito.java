@@ -40,7 +40,8 @@ public class Carrito {
      */
     public void aplicarDescuento(Descuento descuento) {
         // Implementar
-    }
+    	this.descuentos.add(descuento);
+  }
 
     /**
      * Lista todos los productos que forman parte del carrito.<br>
