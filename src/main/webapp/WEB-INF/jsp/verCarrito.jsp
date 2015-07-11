@@ -46,12 +46,12 @@
 		</div>
 		<div class="col-md-4 col-md-offset-8">
 			
-		    <form:form method="post" action="/agregar/descuento" class="col-md-12" >
+		    <form:form method="post" action="/carrito/agregar/descuento" class="col-md-12" >
 		    <div class="col-md-12"><label>Aplicar Descuentos</label></div>
 	   		<div class="col-md-7">
 				<select name="tipo" class="form-control">
-				  <option value="porcentaje">Porcentaje</option>
-				  <option value="monto">Monto</option>
+				  <option value="0">Porcentaje</option>
+				  <option value="1">Monto</option>
 				</select>
 			</div>
 			<div class="col-md-5">
