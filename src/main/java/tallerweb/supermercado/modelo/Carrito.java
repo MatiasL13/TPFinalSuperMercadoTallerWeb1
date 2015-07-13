@@ -85,13 +85,14 @@ public class Carrito {
      */
     public Double totalAhorros() {
        Double totalSinDescuentos= totalSinDescuentos(); 
+       Double totalAhorros = 0.0;
        for(Descuento ele : descuentos)
        {
     	  if( ele.getMonto() != null)
-    		  totalSinDescuentos = totalSinDescuentos - ele.getMonto();
+    		  totalAhorros += ele.getMonto();
     	  else
-    		  totalSinDescuentos = totalSinDescuentos - (totalSinDescuentos * ele.getPorcentaje())/100;
-       }
-        return totalSinDescuentos;
+    		  totalAhorros += (totalSinDescuentos * ele.getPorcentaje())/100;
+       }	
+        return totalAhorros;
     }
 }

@@ -21,10 +21,9 @@
     </ul>  
 </nav>
 <div>
-<div>
 	<legend>Productos en carrito</legend>
 </div>
-	<div class="col-md-10 col-md-offset-1 center">
+	<div class="col-md-6 col-md-offset">
 	<table class="table">
 	<tr>
 		<td>Nombre</td>
@@ -39,31 +38,56 @@
 	</c:forEach>
 
 	</table>
-
-		 <div class= "col-md-3 col-md-offset-9">
-			<a  class="btn btn-success btn-block opcionesCarrito" href="<%=request.getContextPath()%>/carrito/listarProductos">agregar Producto</a>
-			<a href="<%=request.getContextPath()%>/carrito/vaciar" class="btn btn-danger btn-block opcionesCarrito">Cancelar</a>
-		</div>
-		<div class="col-md-4 col-md-offset-8">
-			
-		    <form:form method="post" action="/carrito/agregar/descuento" class="col-md-12" >
-		    <div class="col-md-12"><label>Aplicar Descuentos</label></div>
-	   		<div class="col-md-7">
-				<select name="tipo" class="form-control">
-				  <option value="0">Porcentaje</option>
-				  <option value="1">Monto</option>
-				</select>
-			</div>
-			<div class="col-md-5">
-				<input type="text" class="form-control" name="cantidad"/> 
-			</div>
-			<div class="col-md-12">
-			<input class="btn btn-info btn-block " type="submit" value="Aplicar descuento">
-			</div>
-			</form:form>
-		</div>
-	</div>
 </div>
+	<div class="col-md-6">
+		
+		<div class="col-md-12">
+			<div class="col-md-6">
+							<a  class="btn btn-success btn-block opcionesCarrito" href="<%=request.getContextPath()%>/carrito/listarProductos">agregar Producto</a>
+			</div>
+
+			<div class="col-md-6">
+				 <form:form method="post" action="/carrito/agregar/descuento" >
+			   		<div class="col-md-7">
+						<select name="tipo" class="form-control">
+						  <option value="0">Porcentaje</option>
+						  <option value="1">Monto</option>
+						</select>
+					</div>
+					<div class="col-md-5">
+						<input type="numeric" class="form-control" name="cantidad"/> 
+					</div>
+					<div class="col-md-12">
+					<input class="btn btn-info btn-block " type="submit" value="Aplicar descuento">
+					</div>
+				</form:form>
+			</div>
+		   
+		</div>
+		<div class="col-md-12 margin20 center">
+			<div class="col-md-4">
+				<span class="label label-warning">Total Sin Descuento</span>
+				<input type="numeric"  disabled class="form-control" name="" value= "${totalSinDescuentos}"/> 
+			</div>
+			<div class="col-md-4">
+				<span class="label label-success">Ahorro</span>
+				<input type="numeric"  disabled class="form-control"  value="${totalAhorro}"name="cantidad"/> 
+			</div>
+			<div class="col-md-4">
+				<span class="label label-primary">Total</span>
+				<input type="numeric"  disabled class="form-control" value="${total}" name="cantidad"/> 
+			</div>
+		</div>
+		 <div class= "col-md-12 margin20">
+		 	<div class="col-md-6">
+				<a href="<%=request.getContextPath()%>/carrito/comprar" class="btn btn-primary btn-block opcionesCarrito">Confirmar</a>
+		 	</div>
+		 	<div class="col-md-6">
+				<a href="<%=request.getContextPath()%>/carrito/vaciar" class="btn btn-danger btn-block opcionesCarrito">Cancelar</a>
+		 	</div>
+		</div>
+</div>
+	
 
 
 
