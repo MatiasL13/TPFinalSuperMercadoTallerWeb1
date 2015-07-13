@@ -38,40 +38,43 @@
 		</c:forEach>
 		</table>
 	</div>
-	 <div class= "col-md-4 col-md-offset-8">
+
+	<div class= "col-md-4 col-md-offset-1">
 		<a  class="btn btn-success opcionesCarrito" href="<%=request.getContextPath()%>/carrito/listarProductos">Agregar producto</a>
 		<a href="<%=request.getContextPath()%>/carrito/vaciar" class="btn btn-danger opcionesCarrito">Vaciar carrito</a>			
-	    <form:form method="post" action="/agregar/descuento">
+	    <form:form method="post" action="agregar/descuento">
 	    <div class="col-md-12"><label>Descuentos</label></div>
    		<div class="col-md-7">
 			<select name="tipo" class="form-control">
-			  <option value="porcentaje">Porcentaje</option>
-			  <option value="monto">Monto</option>
+			  <option value="0">Porcentaje</option>
+			  <option value="1">Monto</option>
 			</select>
 		</div>
 		<div class="col-md-5">
 			<input type="text" class="form-control" name="cantidad"/> 
 		</div>
-		<div class="col-md-4 col-md-offset-8">
-			
-		    <form:form method="post" action="/carrito/agregar/descuento" class="col-md-12" >
-		    <div class="col-md-12"><label>Aplicar Descuentos</label></div>
-	   		<div class="col-md-7">
-				<select name="tipo" class="form-control">
-				  <option value="0">Porcentaje</option>
-				  <option value="1">Monto</option>
-				</select>
-			</div>
-			<div class="col-md-5">
-				<input type="text" class="form-control" name="cantidad"/> 
-			</div>
-			<div class="col-md-12">
-			<input class="btn btn-info btn-block " type="submit" value="Aplicar descuento">
-			</div>
-			</form:form>
+		<div class="col-md-12">
+		<input class="btn btn-info " type="submit" value="Aplicar descuento">
 		</div>
 		</form:form>
 	</div>
+	<div class="col-md-4 col-md-offset-1 center">
+		<table class="table">
+		<tr>
+			<td><h4>Total sin descuentos</h4></td>
+			<td><h4>${totalSinDescuentos} $</h4></td>
+		</tr>
+		<tr>
+			<td><h4 class="text-success">Descuentos</h4></td>
+			<td><h4 class="text-success">${totalAhorro}  $</h4></td>
+		</tr>
+		<tr>
+			<td><h4>Total a pagar</h4></td>
+			<td><h4>${total} $</h4></td>
+		</tr>
+		</table>
+	</div>
+
 </div>
 
 

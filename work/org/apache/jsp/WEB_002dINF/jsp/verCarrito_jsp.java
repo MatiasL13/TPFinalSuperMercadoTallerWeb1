@@ -57,38 +57,37 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("<html>\n");
-      out.write("<head>\n");
-      out.write("\n");
-      out.write("\t\n");
-      out.write("\t\n");
+      out.write("<html>\r\n");
+      out.write("<head>\r\n");
+      out.write("\r\n");
+      out.write("\t\r\n");
+      out.write("\t\r\n");
       out.write("\t<link rel=\"stylesheet\" href=\"");
       out.print(request.getContextPath());
-      out.write("/css/bootstrap.css\"/>\n");
+      out.write("/css/bootstrap.css\"/>\r\n");
       out.write("\t<link rel=\"stylesheet\" href=\"");
       out.print(request.getContextPath());
-      out.write("/css/style.css\"/>\n");
+      out.write("/css/style.css\"/>\r\n");
       out.write("\t<script src=\"");
       out.print(request.getContextPath());
-      out.write("/js/script.js\" ></script>\n");
-      out.write("\t<title></title>\n");
-      out.write("</head>\n");
-      out.write("<body>\n");
-      out.write("\t<nav class=\"navbar navbar-default\" role=\"navigation\">\n");
-      out.write("   <div class=\"header col-md-12\">      \n");
-      out.write("  \n");
-      out.write("   </div> \n");
-      out.write(" \n");
-      out.write("  <ul class=\"nav navbar-nav\" >\n");
+      out.write("/js/script.js\" ></script>\r\n");
+      out.write("\t<title></title>\r\n");
+      out.write("</head>\r\n");
+      out.write("<body>\r\n");
+      out.write("\t<nav class=\"navbar navbar-default\" role=\"navigation\">\r\n");
+      out.write("   <div class=\"header col-md-12\">      \r\n");
+      out.write("  \r\n");
+      out.write("   </div> \r\n");
+      out.write(" \r\n");
+      out.write("  <ul class=\"nav navbar-nav\" >\r\n");
       out.write("      <li style=\"display: inline;\" ><a href=\"");
       out.print(request.getContextPath());
-      out.write("\">HOME</a></li>\n");
+      out.write("\">HOME</a></li>\r\n");
       out.write("      <li style=\"display: inline;\" class=\"active\" ><a href=\"");
       out.print(request.getContextPath());
-      out.write("/carrito/ver\">Carrito</a></li>     \n");
+      out.write("/carrito/ver\">Carrito</a></li>     \r\n");
       out.write("      <li style=\"display: inline;\" ><a href=\"");
       out.print(request.getContextPath());
-<<<<<<< HEAD
       out.write("/stock/ver\">stock</a></li>\r\n");
       out.write("    </ul>  \r\n");
       out.write("</nav>\r\n");
@@ -108,7 +107,8 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\t\t</table>\r\n");
       out.write("\t</div>\r\n");
-      out.write("\t <div class= \"col-md-4 col-md-offset-8\">\r\n");
+      out.write("\r\n");
+      out.write("\t<div class= \"col-md-4 col-md-offset-1\">\r\n");
       out.write("\t\t<a  class=\"btn btn-success opcionesCarrito\" href=\"");
       out.print(request.getContextPath());
       out.write("/carrito/listarProductos\">Agregar producto</a>\r\n");
@@ -120,54 +120,34 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write("\r\n");
       out.write("\t</div>\r\n");
+      out.write("\t<div class=\"col-md-4 col-md-offset-1 center\">\r\n");
+      out.write("\t\t<table class=\"table\">\r\n");
+      out.write("\t\t<tr>\r\n");
+      out.write("\t\t\t<td><h4>Total sin descuentos</h4></td>\r\n");
+      out.write("\t\t\t<td><h4>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${totalSinDescuentos}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write(" $</h4></td>\r\n");
+      out.write("\t\t</tr>\r\n");
+      out.write("\t\t<tr>\r\n");
+      out.write("\t\t\t<td><h4 class=\"text-success\">Descuentos</h4></td>\r\n");
+      out.write("\t\t\t<td><h4 class=\"text-success\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${totalAhorro}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("  $</h4></td>\r\n");
+      out.write("\t\t</tr>\r\n");
+      out.write("\t\t<tr>\r\n");
+      out.write("\t\t\t<td><h4>Total a pagar</h4></td>\r\n");
+      out.write("\t\t\t<td><h4>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${total}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write(" $</h4></td>\r\n");
+      out.write("\t\t</tr>\r\n");
+      out.write("\t\t</table>\r\n");
+      out.write("\t</div>\r\n");
+      out.write("\r\n");
       out.write("</div>\r\n");
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
       out.write("</body>\r\n");
-=======
-      out.write("/stock/ver\">stock</a></li>\n");
-      out.write("    </ul>  \n");
-      out.write("</nav>\n");
-      out.write("<div>\n");
-      out.write("<div>\n");
-      out.write("\t<legend>Productos en carrito</legend>\n");
-      out.write("</div>\n");
-      out.write("\t<div class=\"col-md-10 col-md-offset-1 center\">\n");
-      out.write("\t<table class=\"table\">\n");
-      out.write("\t<tr>\n");
-      out.write("\t\t<td>Nombre</td>\n");
-      out.write("\t\t<td>Precio</td>\n");
-      out.write("\t</tr>\n");
-      out.write("\t");
-      if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
-        return;
-      out.write("\n");
-      out.write("\n");
-      out.write("\t</table>\n");
-      out.write("\n");
-      out.write("\t\t <div class= \"col-md-3 col-md-offset-9\">\n");
-      out.write("\t\t\t<a  class=\"btn btn-success btn-block opcionesCarrito\" href=\"");
-      out.print(request.getContextPath());
-      out.write("/carrito/listarProductos\">agregar Producto</a>\n");
-      out.write("\t\t\t<a href=\"");
-      out.print(request.getContextPath());
-      out.write("/carrito/vaciar\" class=\"btn btn-danger btn-block opcionesCarrito\">Cancelar</a>\n");
-      out.write("\t\t</div>\n");
-      out.write("\t\t<div class=\"col-md-4 col-md-offset-8\">\n");
-      out.write("\t\t\t\n");
-      out.write("\t\t    ");
-      if (_jspx_meth_form_005fform_005f0(_jspx_page_context))
-        return;
-      out.write("\n");
-      out.write("\t\t</div>\n");
-      out.write("\t</div>\n");
-      out.write("</div>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("</body>\n");
->>>>>>> 0f7e9cf9c49376ac66e929a34afff4b00eb2230a
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -199,7 +179,6 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       int _jspx_eval_c_005fforEach_005f0 = _jspx_th_c_005fforEach_005f0.doStartTag();
       if (_jspx_eval_c_005fforEach_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-<<<<<<< HEAD
           out.write("\r\n");
           out.write("\t\t<tr>\r\n");
           out.write("\t\t\t<td>");
@@ -210,19 +189,6 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("</td>\r\n");
           out.write("\t\t</tr>\r\n");
           out.write("\t\t");
-=======
-          out.write("\n");
-          out.write("\t<tr>\n");
-          out.write("\t\t<td>");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.nombre}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</td>\n");
-          out.write("\t\t<td>");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.precio}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</td>\n");
-          out.write("\n");
-          out.write("\t</tr>\n");
-          out.write("\t");
->>>>>>> 0f7e9cf9c49376ac66e929a34afff4b00eb2230a
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -250,29 +216,21 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent(null);
-    // /WEB-INF/jsp/verCarrito.jsp(44,5) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/verCarrito.jsp(45,5) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setMethod("post");
-<<<<<<< HEAD
-    // /WEB-INF/jsp/verCarrito.jsp(44,5) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_form_005fform_005f0.setAction("/agregar/descuento");
-=======
-    // /WEB-INF/jsp/verCarrito.jsp(49,6) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_form_005fform_005f0.setAction("/carrito/agregar/descuento");
-    // /WEB-INF/jsp/verCarrito.jsp(49,6) null
-    _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "class", new String("col-md-12"));
->>>>>>> 0f7e9cf9c49376ac66e929a34afff4b00eb2230a
+    // /WEB-INF/jsp/verCarrito.jsp(45,5) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fform_005f0.setAction("agregar/descuento");
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_form_005fform_005f0 = _jspx_th_form_005fform_005f0.doStartTag();
       if (_jspx_eval_form_005fform_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-<<<<<<< HEAD
           out.write("\r\n");
           out.write("\t    <div class=\"col-md-12\"><label>Descuentos</label></div>\r\n");
           out.write("   \t\t<div class=\"col-md-7\">\r\n");
           out.write("\t\t\t<select name=\"tipo\" class=\"form-control\">\r\n");
-          out.write("\t\t\t  <option value=\"porcentaje\">Porcentaje</option>\r\n");
-          out.write("\t\t\t  <option value=\"monto\">Monto</option>\r\n");
+          out.write("\t\t\t  <option value=\"0\">Porcentaje</option>\r\n");
+          out.write("\t\t\t  <option value=\"1\">Monto</option>\r\n");
           out.write("\t\t\t</select>\r\n");
           out.write("\t\t</div>\r\n");
           out.write("\t\t<div class=\"col-md-5\">\r\n");
@@ -282,23 +240,6 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\t\t<input class=\"btn btn-info \" type=\"submit\" value=\"Aplicar descuento\">\r\n");
           out.write("\t\t</div>\r\n");
           out.write("\t\t");
-=======
-          out.write("\n");
-          out.write("\t\t    <div class=\"col-md-12\"><label>Aplicar Descuentos</label></div>\n");
-          out.write("\t   \t\t<div class=\"col-md-7\">\n");
-          out.write("\t\t\t\t<select name=\"tipo\" class=\"form-control\">\n");
-          out.write("\t\t\t\t  <option value=\"0\">Porcentaje</option>\n");
-          out.write("\t\t\t\t  <option value=\"1\">Monto</option>\n");
-          out.write("\t\t\t\t</select>\n");
-          out.write("\t\t\t</div>\n");
-          out.write("\t\t\t<div class=\"col-md-5\">\n");
-          out.write("\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"cantidad\"/> \n");
-          out.write("\t\t\t</div>\n");
-          out.write("\t\t\t<div class=\"col-md-12\">\n");
-          out.write("\t\t\t<input class=\"btn btn-info btn-block \" type=\"submit\" value=\"Aplicar descuento\">\n");
-          out.write("\t\t\t</div>\n");
-          out.write("\t\t\t");
->>>>>>> 0f7e9cf9c49376ac66e929a34afff4b00eb2230a
           int evalDoAfterBody = _jspx_th_form_005fform_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
