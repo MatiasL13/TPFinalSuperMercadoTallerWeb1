@@ -121,7 +121,9 @@ public final class agregarACarrito_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\r\n");
       out.write("\r\n");
       out.write("\t</table>\r\n");
-      out.write("\r\n");
+      out.write("\t\t<a class=\"btn btn-info \"  href=\"");
+      out.print(request.getContextPath());
+      out.write("/carrito/ver\">Volver</a> \r\n");
       out.write("\r\n");
       out.write("\t</div>\r\n");
       out.write("</div>\r\n");
