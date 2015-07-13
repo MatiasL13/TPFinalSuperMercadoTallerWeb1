@@ -21,7 +21,7 @@
     </ul>  
 </nav>
 <div>
-<<<<<<< HEAD
+
 	<legend>Productos en carrito</legend>
 </div>
 	<div class="col-md-6 col-md-offset">
