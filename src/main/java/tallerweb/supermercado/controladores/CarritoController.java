@@ -40,11 +40,16 @@ public class CarritoController {
 	}
 	
 	@RequestMapping("/listarProductos")
-	public ModelAndView mostrarStock() {
+	public ModelAndView mostrarStock(int msjOK) {
+		String msjCargaOk = "NADA";
+		if(msjOK==1){
+			msjCargaOk = "Su producto fue agregado con exito";
+		}
 
-			Map<Producto,Integer> productosEnStock = Stock.getInstance().obtenerStock();
+		Map<Producto,Integer> productosEnStock = Stock.getInstance().obtenerStock();
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.addObject("stock", productosEnStock);
+		modelAndView.addObject("msjCargaOk", msjCargaOk);
 		modelAndView.setViewName("agregarACarrito");
 		modelAndView.addObject("command",new Producto());
 		
@@ -52,7 +57,7 @@ public class CarritoController {
 		return modelAndView;
 	}
 	@RequestMapping(value = "/agregar/ingresar", method = RequestMethod.POST)
-    public String agregarACarrito(@ModelAttribute("producto")	Producto producto, // se envia la clase Producto 
+    public void agregarACarrito(@ModelAttribute("producto")	Producto producto, // se envia la clase Producto 
     								@RequestParam("cantidad") Integer cantidad, // se envia el paramtro cantidad
     								BindingResult result){
 		cantidad = Stock.getInstance().comprarProducto(producto,cantidad);// metodo modificado para controlar stock negativo
@@ -62,7 +67,8 @@ public class CarritoController {
 				Carrito.getInstance().agregarProducto(producto);
 			}
 		
-        return "redirect:/carrito/listarProductos";
+        //return "redirect:/carrito/listarProductos";
+		this.mostrarStock(1);
     }
 	
 	@RequestMapping(value = "/vaciar")

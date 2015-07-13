@@ -104,6 +104,14 @@ public final class agregarACarrito_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\r\n");
       out.write("\t<div class=\"row\">\r\n");
       out.write("\t\t<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\r\n");
+      out.write("\t\t\t<p>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${msjCargaOk}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("</p>\r\n");
+      out.write("\t\t</div>\r\n");
+      out.write("\t</div>\r\n");
+      out.write("\r\n");
+      out.write("\t<div class=\"row\">\r\n");
+      out.write("\t\t<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\r\n");
       out.write("\t\t\t<p id=\"msjError00\" class=\"bg-danger text-center hidden\">\r\n");
       out.write("\t\t\t</p>\r\n");
       out.write("\t\t\t<p id=\"msjOK\" class=\"bg-danger text-center hidden\"><span class=\"glyphicon glyphicon-warning-sign\"></span> </p>\r\n");
@@ -153,9 +161,9 @@ public final class agregarACarrito_jsp extends org.apache.jasper.runtime.HttpJsp
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent(null);
-    // /WEB-INF/jsp/agregarACarrito.jsp(42,1) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/agregarACarrito.jsp(42,1) '${stock}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${stock}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/agregarACarrito.jsp(42,1) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarACarrito.jsp(48,1) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/agregarACarrito.jsp(48,1) '${stock}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${stock}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/agregarACarrito.jsp(48,1) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVar("dato");
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
@@ -213,13 +221,13 @@ public final class agregarACarrito_jsp extends org.apache.jasper.runtime.HttpJsp
     org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fid_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/agregarACarrito.jsp(48,7) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarACarrito.jsp(54,7) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setMethod("post");
-    // /WEB-INF/jsp/agregarACarrito.jsp(48,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarACarrito.jsp(54,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setAction("/carrito/agregar/ingresar");
-    // /WEB-INF/jsp/agregarACarrito.jsp(48,7) null
+    // /WEB-INF/jsp/agregarACarrito.jsp(54,7) null
     _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "class", new String("col-md-12"));
-    // /WEB-INF/jsp/agregarACarrito.jsp(48,7) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarACarrito.jsp(54,7) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setId((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("frm_${dato.key.nombre}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {
@@ -271,13 +279,13 @@ public final class agregarACarrito_jsp extends org.apache.jasper.runtime.HttpJsp
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f0 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fpath_005fclass_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/agregarACarrito.jsp(52,11) null
+    // /WEB-INF/jsp/agregarACarrito.jsp(58,11) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "type", new String("hidden"));
-    // /WEB-INF/jsp/agregarACarrito.jsp(52,11) null
+    // /WEB-INF/jsp/agregarACarrito.jsp(58,11) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "class", new String("form-control"));
-    // /WEB-INF/jsp/agregarACarrito.jsp(52,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarACarrito.jsp(58,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f0.setPath("nombre");
-    // /WEB-INF/jsp/agregarACarrito.jsp(52,11) null
+    // /WEB-INF/jsp/agregarACarrito.jsp(58,11) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "value", (java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.nombre}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int[] _jspx_push_body_count_form_005finput_005f0 = new int[] { 0 };
     try {
@@ -304,13 +312,13 @@ public final class agregarACarrito_jsp extends org.apache.jasper.runtime.HttpJsp
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f1 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fpath_005fclass_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f1.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/agregarACarrito.jsp(53,11) null
+    // /WEB-INF/jsp/agregarACarrito.jsp(59,11) null
     _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "type", new String("hidden"));
-    // /WEB-INF/jsp/agregarACarrito.jsp(53,11) null
+    // /WEB-INF/jsp/agregarACarrito.jsp(59,11) null
     _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "class", new String("form-control"));
-    // /WEB-INF/jsp/agregarACarrito.jsp(53,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarACarrito.jsp(59,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f1.setPath("precio");
-    // /WEB-INF/jsp/agregarACarrito.jsp(53,11) null
+    // /WEB-INF/jsp/agregarACarrito.jsp(59,11) null
     _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "value", (java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.precio}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int[] _jspx_push_body_count_form_005finput_005f1 = new int[] { 0 };
     try {

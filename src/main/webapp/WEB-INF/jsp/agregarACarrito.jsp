@@ -28,6 +28,12 @@
 
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<p>${msjCargaOk}</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<p id="msjError00" class="bg-danger text-center hidden">
 			</p>
 			<p id="msjOK" class="bg-danger text-center hidden"><span class="glyphicon glyphicon-warning-sign"></span> </p>
