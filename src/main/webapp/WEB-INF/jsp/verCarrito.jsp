@@ -21,6 +21,7 @@
     </ul>  
 </nav>
 <div>
+<<<<<<< HEAD
 	<legend>Productos en carrito</legend>
 </div>
 	<div class="col-md-6 col-md-offset">
@@ -86,6 +87,7 @@
 				<a href="<%=request.getContextPath()%>/carrito/vaciar" class="btn btn-danger btn-block opcionesCarrito">Cancelar</a>
 		 	</div>
 		</div>
+
 </div>
 	
 

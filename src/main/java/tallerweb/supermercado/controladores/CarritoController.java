@@ -30,7 +30,6 @@ public class CarritoController {
 		
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.addObject("productos", productos);
-		
 		modelAndView.addObject("totalSinDescuentos", totalSinDescuentos);
 		modelAndView.addObject("totalAhorro", totalAhorro);
 		modelAndView.addObject("total", total);
