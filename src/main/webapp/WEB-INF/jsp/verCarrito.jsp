@@ -52,8 +52,23 @@
 		<div class="col-md-5">
 			<input type="text" class="form-control" name="cantidad"/> 
 		</div>
-		<div class="col-md-12">
-		<input class="btn btn-info " type="submit" value="Aplicar descuento">
+		<div class="col-md-4 col-md-offset-8">
+			
+		    <form:form method="post" action="/carrito/agregar/descuento" class="col-md-12" >
+		    <div class="col-md-12"><label>Aplicar Descuentos</label></div>
+	   		<div class="col-md-7">
+				<select name="tipo" class="form-control">
+				  <option value="0">Porcentaje</option>
+				  <option value="1">Monto</option>
+				</select>
+			</div>
+			<div class="col-md-5">
+				<input type="text" class="form-control" name="cantidad"/> 
+			</div>
+			<div class="col-md-12">
+			<input class="btn btn-info btn-block " type="submit" value="Aplicar descuento">
+			</div>
+			</form:form>
 		</div>
 		</form:form>
 	</div>

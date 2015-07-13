@@ -61,7 +61,7 @@ public class Carrito {
      */
     public Double total() {
         // Implementar
-        return null;
+    	return totalSinDescuentos() - totalAhorros();
     }
 
     /**
@@ -70,8 +70,12 @@ public class Carrito {
      * @return
      */
     public Double totalSinDescuentos() {
-        // Implementar
-        return null;
+    	Double sum = 0.0;
+       for (Producto ele : productos)
+       {
+    	   sum += ele.getPrecio(); 
+       }
+       return sum;
     }
 
     /**
@@ -80,7 +84,14 @@ public class Carrito {
      * @return
      */
     public Double totalAhorros() {
-        // Implementar
-        return null;
+       Double totalSinDescuentos= totalSinDescuentos(); 
+       for(Descuento ele : descuentos)
+       {
+    	  if( ele.getMonto() != null)
+    		  totalSinDescuentos = totalSinDescuentos - ele.getMonto();
+    	  else
+    		  totalSinDescuentos = totalSinDescuentos - (totalSinDescuentos * ele.getPorcentaje())/100;
+       }
+        return totalSinDescuentos;
     }
 }

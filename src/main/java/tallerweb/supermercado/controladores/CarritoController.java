@@ -22,10 +22,19 @@ public class CarritoController {
 
 	@RequestMapping("/ver")
 	public ModelAndView mostrarProductosCarrito() {
-
+		
 		List<Producto> productos = Carrito.getInstance().verProductos();
+		double totalSinDescuentos = Carrito.getInstance().totalSinDescuentos();
+		double totalAhorro = Carrito.getInstance().totalAhorros();
+		double total = Carrito.getInstance().total();
+		
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.addObject("productos", productos);
+		
+		modelAndView.addObject("totalSinDescuentos", totalSinDescuentos);
+		modelAndView.addObject("totalAhorro", totalAhorro);
+		modelAndView.addObject("total", total);
+		
 		modelAndView.setViewName("verCarrito");
 		modelAndView.addObject("command",new Producto());
 		return modelAndView;
@@ -69,11 +78,11 @@ public class CarritoController {
     }
 	
 	@RequestMapping(value = "/agregar/descuento", method = RequestMethod.POST)
-    public String aplicarDescuento(@RequestParam("tipo")	String tipo, // se envia la clase Producto 
-    								@RequestParam("cantidad") Double cantidad, // se envia el paramtro cantidad
-    								BindingResult result){
+    public String aplicarDescuento(@RequestParam("tipo") Integer tipo, // se envia la 
+    								@RequestParam("cantidad") Double cantidad// se envia el paramtro cantidad
+    							){
 		Descuento descuento = new Descuento();
-		if(tipo == "porcentaje")
+		if(tipo == 0)
 			descuento.setPorcentaje(cantidad);
 			
 		else
