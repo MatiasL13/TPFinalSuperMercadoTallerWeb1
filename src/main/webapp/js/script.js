@@ -20,5 +20,5 @@ function checkMoverCarrito(idNameArticulo){
 }//End function checkMoverCarrito
 
 function cancelaMoverCarrito(){
-	
+	$("#msjError00").addClass("hidden");
 }//End function cancelaMoverCarrito
