@@ -21,47 +21,41 @@
     </ul>  
 </nav>
 <div>
-<div>
-	<legend>Productos en carrito</legend>
-</div>
+	<div>
+		<legend>Productos en carrito</legend>
+	</div>
 	<div class="col-md-10 col-md-offset-1 center">
-	<table class="table">
-	<tr>
-		<td>Nombre</td>
-		<td>Precio</td>
-	</tr>
-	<c:forEach  items="${productos}" var="dato">
-	<tr>
-		<td>${dato.nombre}</td>
-		<td>${dato.precio}</td>
-
-	</tr>
-	</c:forEach>
-
-	</table>
-
-		 <div class= "col-md-3 col-md-offset-9">
-			<a  class="btn btn-success btn-block opcionesCarrito" href="<%=request.getContextPath()%>/carrito/listarProductos">agregar Producto</a>
-			<a href="<%=request.getContextPath()%>/carrito/vaciar" class="btn btn-danger btn-block opcionesCarrito">Cancelar</a>
+		<table class="table">
+		<tr>
+			<td>Nombre</td>
+			<td>Precio</td>
+		</tr>
+		<c:forEach  items="${productos}" var="dato">
+		<tr>
+			<td>${dato.nombre}</td>
+			<td>${dato.precio}</td>
+		</tr>
+		</c:forEach>
+		</table>
+	</div>
+	 <div class= "col-md-4 col-md-offset-8">
+		<a  class="btn btn-success opcionesCarrito" href="<%=request.getContextPath()%>/carrito/listarProductos">Agregar producto</a>
+		<a href="<%=request.getContextPath()%>/carrito/vaciar" class="btn btn-danger opcionesCarrito">Vaciar carrito</a>			
+	    <form:form method="post" action="/agregar/descuento">
+	    <div class="col-md-12"><label>Descuentos</label></div>
+   		<div class="col-md-7">
+			<select name="tipo" class="form-control">
+			  <option value="porcentaje">Porcentaje</option>
+			  <option value="monto">Monto</option>
+			</select>
 		</div>
-		<div class="col-md-4 col-md-offset-8">
-			
-		    <form:form method="post" action="/agregar/descuento" class="col-md-12" >
-		    <div class="col-md-12"><label>Aplicar Descuentos</label></div>
-	   		<div class="col-md-7">
-				<select name="tipo" class="form-control">
-				  <option value="porcentaje">Porcentaje</option>
-				  <option value="monto">Monto</option>
-				</select>
-			</div>
-			<div class="col-md-5">
-				<input type="text" class="form-control" name="cantidad"/> 
-			</div>
-			<div class="col-md-12">
-			<input class="btn btn-info btn-block " type="submit" value="Aplicar descuento">
-			</div>
-			</form:form>
+		<div class="col-md-5">
+			<input type="text" class="form-control" name="cantidad"/> 
 		</div>
+		<div class="col-md-12">
+		<input class="btn btn-info " type="submit" value="Aplicar descuento">
+		</div>
+		</form:form>
 	</div>
 </div>
 
