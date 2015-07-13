@@ -56,7 +56,7 @@
 						</select>
 					</div>
 					<div class="col-md-5">
-						<input type="numeric" class="form-control" name="cantidad"/> 
+						<input type="number" class="form-control" name="cantidad"/> 
 					</div>
 					<div class="col-md-12">
 					<input class="btn btn-info btn-block " type="submit" value="Aplicar descuento">

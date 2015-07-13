@@ -92,7 +92,7 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </ul>  \n");
       out.write("</nav>\n");
       out.write("<div>\n");
-      out.write("<<<<<<< HEAD\n");
+      out.write("\n");
       out.write("\t<legend>Productos en carrito</legend>\n");
       out.write("</div>\n");
       out.write("\t<div class=\"col-md-6 col-md-offset\">\n");
@@ -250,7 +250,7 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\t\t\t\t\t\t</select>\n");
           out.write("\t\t\t\t\t</div>\n");
           out.write("\t\t\t\t\t<div class=\"col-md-5\">\n");
-          out.write("\t\t\t\t\t\t<input type=\"numeric\" class=\"form-control\" name=\"cantidad\"/> \n");
+          out.write("\t\t\t\t\t\t<input type=\"number\" class=\"form-control\" name=\"cantidad\"/> \n");
           out.write("\t\t\t\t\t</div>\n");
           out.write("\t\t\t\t\t<div class=\"col-md-12\">\n");
           out.write("\t\t\t\t\t<input class=\"btn btn-info btn-block \" type=\"submit\" value=\"Aplicar descuento\">\n");

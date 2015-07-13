@@ -16,3 +16,9 @@ a{
 .margin20{
 	margin: 20px;
 }
+.mensajes{
+	min-height: 75px;
+}
+.marginTop10{
+	margin-top: 10px;
+}
