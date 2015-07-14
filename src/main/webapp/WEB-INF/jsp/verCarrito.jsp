@@ -1,18 +1,19 @@
 <html>
 <head>
 
-	<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-	<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@	taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@	taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap.css"/>
+	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/small-business.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css"/>
 	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
 	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
 	<script src="<%=request.getContextPath()%>/js/bootstrap.js" ></script>
 
 
-	<title></title>
+	<title>:: Supermercado ::</title>
 </head>
-<body>
+<body  id="page-top">
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -23,7 +24,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="<%=request.getContextPath()%>/img/logo.png" class="logoResponsive" alt="logo principal"/></a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="<%=request.getContextPath()%>/css/img/logo.png" style="height:30px;" alt="logo principal"/>Supermercado Online</a>
             </div>
            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -31,7 +32,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="<%=request.getContextPath()%>">HOME</a>
+                        <a class="page-scroll" href="<%=request.getContextPath()%>">Inicio</a>
                     </li>
                     <li>
                         <a class="page-scroll active" href="<%=request.getContextPath()%>/carrito/ver">Carrito</a>
@@ -44,7 +45,6 @@
         </div>
     </nav>
 <div>
-
 	<legend>Productos en carrito</legend>
 </div>
 <!-- COMIENZO MENSAJES -->
