@@ -63,6 +63,29 @@ function vaciarCarritoCompras(){
 	$("#msjAlert00").removeClass("hidden");
 }
 
+function validarDescuento(){
+	//Obtengo el valor del descuento
+	var dto = $("#cantidadDescuento").val();
+	var submit=true;
+	//Controlo que no sea nulo
+	if(dto == "" || dto.lenght==0){
+		showMsj("msjAlert01");
+		submit=false;
+	}//End if
+	//Si cargo descuento submiteo
+	if(submit==true){
+		$("#frmCalculoDescuento").submit();
+	}	
+}
+
+function hideMsj(idMsj){
+	$("#"+idMsj).addClass("hidden");
+}
+
+function showMsj(idMsj){
+	$("#"+idMsj).removeClass("hidden");
+}
+
 function cancelarVaciarCarrito(){
 	$("#msjAlert00").addClass("hidden");
 }
