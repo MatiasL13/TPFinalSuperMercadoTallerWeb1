@@ -58,6 +58,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("/css/bootstrap.css\"/>\r\n");
       out.write("\t<link rel=\"stylesheet\" href=\"");
       out.print(request.getContextPath());
+<<<<<<< HEAD
       out.write("/css/style.css\"/>\r\n");
       out.write("    <script src=\"");
       out.print(request.getContextPath());
@@ -73,6 +74,23 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("   </div> \r\n");
       out.write(" \r\n");
       out.write("  <ul class=\"nav navbar-nav\" >\r\n");
+=======
+      out.write("/css/style.css\"/>\n");
+      out.write("    <script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/jquery.js\" ></script>\n");
+      out.write("  <script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/script.js\" ></script>\n");
+      out.write("</head>\n");
+      out.write("<body>\n");
+      out.write("   <nav class=\"navbar navbar-default\" role=\"navigation\">\n");
+      out.write("   <div class=\"header col-md-12\">      \n");
+      out.write("  \n");
+      out.write("   </div> \n");
+      out.write(" \n");
+      out.write("  <ul class=\"nav navbar-nav\" >\n");
+>>>>>>> 110dadb41c704cc051332c36ad1c59e7bda14ad9
       out.write("      <li style=\"display: inline;\" class=\"active\" ><a href=\"");
       out.print(request.getContextPath());
       out.write("\">HOME</a></li>\r\n");

@@ -58,25 +58,22 @@ public class ProductoTest {
     public void testTotal() {
     
     	double total =  Carrito.getInstance().total();
-    	System.out.println("total"+total);
+    	Assert.assertEquals(total,  12.0,0.1);
     }
 
     @Test
     public void testTotalSinDescuentos() {
     	
     	double total =   Carrito.getInstance().totalSinDescuentos();
-    	System.out.println("sin descuento"+total);
+    	Assert.assertEquals(total,  40.0,0.1);
     }
 
     @Test
     public void testTotalAhorros() {
     	
     	
-    	double total2 =   Carrito.getInstance().totalSinDescuentos();
         double total = Carrito.getInstance().totalAhorros();
-    	double total3 =  Carrito.getInstance().total();
-    	
-        System.out.println("ahorros"+total );
+    	Assert.assertEquals(total,  28,0.1);
     }
 }
 
