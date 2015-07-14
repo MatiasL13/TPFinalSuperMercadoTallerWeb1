@@ -90,6 +90,59 @@ function cancelarVaciarCarrito(){
 	$("#msjAlert00").addClass("hidden");
 }
 
+function validaAgregaStock(idElemento){
+	var cantidad = $("#cantAdd_"+idElemento).val();
+	var submit=true;
+	
+	//Controlo que la cantidad sea un numero
+	if(isNaN(cantidad)){
+		submit=false;
+	}
+
+	//Controlo que la cantidad no sea nula
+	if(cantidad == "" || cantidad.lenght==0){
+		submit=false;
+	}
+
+	//Controlo que la cantidad no sea negativa
+	if(cantidad<0){
+		submit=false;
+	}
+
+	//Si no hubo problemas hago el submit
+	if(submit==true){
+		$("#frmAgregaStock_"+idElemento).submit();
+	}
+	
+}//End function validaAgregaStock
+
+function validaQuitaStock(idElemento){
+	var cantidad = $("#cantRemove_"+idElemento).val();
+	var submit=true;
+	
+	//Controlo que la cantidad sea un numero
+	if(isNaN(cantidad)){
+		submit=false;
+	}
+
+	//Controlo que la cantidad no sea nula
+	if(cantidad == "" || cantidad.lenght==0){
+		submit=false;
+	}
+
+	//Controlo que la cantidad no sea negativa
+	if(cantidad<0){
+		submit=false;
+	}
+
+	//Si no hubo problemas hago el submit
+	if(submit==true){
+		$("#frmQuitaStock_"+idElemento).submit();
+	}
+	
+}//End function validaQuitaStock
+
+
 $('.number').keydown(function(event) {
                // Allow special chars + arrows 
                if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 

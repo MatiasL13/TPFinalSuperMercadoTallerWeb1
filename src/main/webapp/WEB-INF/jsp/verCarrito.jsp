@@ -27,6 +27,7 @@
 
 	<legend>Productos en carrito</legend>
 </div>
+<!-- COMIENZO MENSAJES -->
 <div class="row">
 	<div id="msjAlert00" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center bg-warning hidden">
 		<p><span class="glyphicon glyphicon-warning-sign"></span>&nbsp; ATENCI&Oacute;N: Est&aacute; seguro de querer cancelar su compra? Esta operación vaciar&aacute; su carrito de compras.</p>
@@ -38,6 +39,7 @@
 		<input type="button" onclick="hideMsj('msjAlert01')" class="btn btn-warning" value="Aceptar"/>
 	</div>
 </div>
+<!-- FIN MENSAJES -->
 
 	<div class="col-md-6 col-md-offset">
 	<table class="table">
