@@ -5,8 +5,7 @@
 	<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css"/>
-	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
-	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
+	
 	<title></title>
 
 </head>
@@ -52,10 +51,10 @@
 		<td>
 			    <form:form method="post" action="/carrito/agregar/ingresar" class="col-md-12" id="frm_${dato.key.nombre}" >
 			   		<div class="form-group col-md-2">
-        				<input  class="form-control" name="cantidad" id="cantidad_${dato.key.nombre}"/>
+        				<input  class="form-control number" name="cantidad"  required id="cantidad_${dato.key.nombre}"/>
    					 </div>
 			        <form:input type="hidden"class="form-control" path="nombre" value="${dato.key.nombre}"></form:input>
-			        <form:input type="hidden"class="form-control" path="precio" value="${dato.key.precio}"></form:input>
+			        <form:input type="hidden"class="form-control" path="precio"  value="${dato.key.precio}"></form:input>
 					<input class="btn btn-success col-md-2 agregarProductoACarrito" onclick="checkMoverCarrito('${dato.key.nombre}')" type="button" value="Mover a Carrito">
 				</form:form>
 		</td>
@@ -70,6 +69,7 @@
 </div>
 
 
-
+<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
+	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
 </body>
 </html>

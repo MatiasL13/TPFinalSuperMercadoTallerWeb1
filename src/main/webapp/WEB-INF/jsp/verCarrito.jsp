@@ -5,7 +5,8 @@
 	<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css"/>
-	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
+
+
 	<title></title>
 </head>
 <body>
@@ -92,6 +93,7 @@
 	
 
 
-
+		<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
+	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
 </body>
 </html>

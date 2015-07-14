@@ -71,6 +71,8 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t<link rel=\"stylesheet\" href=\"");
       out.print(request.getContextPath());
       out.write("/css/style.css\"/>\n");
+      out.write("\t\n");
+      out.write("\n");
       out.write("\t<title></title>\n");
       out.write("</head>\n");
       out.write("<body>\n");
@@ -119,7 +121,12 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</div>\n");
       out.write("\n");
       out.write("\n");
-      out.write("\n");
+      out.write("<script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/jquery.js\" ></script>\n");
+      out.write("\t<script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/script.js\" ></script>\n");
       out.write("</body>\n");
       out.write("</html>");
     } catch (Throwable t) {
@@ -143,9 +150,9 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent(null);
-    // /WEB-INF/jsp/stock.jsp(35,1) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/stock.jsp(35,1) '${stock}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${stock}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/stock.jsp(35,1) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(37,1) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/stock.jsp(37,1) '${stock}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${stock}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/stock.jsp(37,1) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVar("dato");
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
@@ -209,11 +216,11 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/stock.jsp(41,7) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(43,7) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setMethod("post");
-    // /WEB-INF/jsp/stock.jsp(41,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(43,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setAction("eliminarProductoStock");
-    // /WEB-INF/jsp/stock.jsp(41,7) null
+    // /WEB-INF/jsp/stock.jsp(43,7) null
     _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "class", new String("col-md-12"));
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {
@@ -254,13 +261,13 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f0 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fpath_005fclass_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/stock.jsp(42,11) null
+    // /WEB-INF/jsp/stock.jsp(44,11) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "type", new String("hidden"));
-    // /WEB-INF/jsp/stock.jsp(42,11) null
+    // /WEB-INF/jsp/stock.jsp(44,11) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "class", new String("form-control"));
-    // /WEB-INF/jsp/stock.jsp(42,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(44,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f0.setPath("nombre");
-    // /WEB-INF/jsp/stock.jsp(42,11) null
+    // /WEB-INF/jsp/stock.jsp(44,11) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "value", (java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.nombre}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int[] _jspx_push_body_count_form_005finput_005f0 = new int[] { 0 };
     try {
@@ -287,11 +294,11 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f1 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f1.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/stock.jsp(48,7) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(50,7) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f1.setMethod("post");
-    // /WEB-INF/jsp/stock.jsp(48,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(50,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f1.setAction("agregarStock");
-    // /WEB-INF/jsp/stock.jsp(48,7) null
+    // /WEB-INF/jsp/stock.jsp(50,7) null
     _jspx_th_form_005fform_005f1.setDynamicAttribute(null, "class", new String("manejoStock"));
     int[] _jspx_push_body_count_form_005fform_005f1 = new int[] { 0 };
     try {
@@ -300,7 +307,7 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
         do {
           out.write("\n");
           out.write("\t\t\t    \t<div class=\"form-group col-md-2\">\n");
-          out.write("        \t\t\t\t<input  class=\"form-control\"name=\"cantidad\"/>\n");
+          out.write("        \t\t\t\t<input  class=\"form-control number\"name=\"cantidad\" required/>\n");
           out.write("   \t\t\t\t\t </div>\n");
           out.write("\t\t\t        ");
           if (_jspx_meth_form_005finput_005f1(_jspx_th_form_005fform_005f1, _jspx_page_context, _jspx_push_body_count_form_005fform_005f1))
@@ -335,13 +342,13 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f1 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fpath_005fclass_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f1.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f1);
-    // /WEB-INF/jsp/stock.jsp(52,11) null
+    // /WEB-INF/jsp/stock.jsp(54,11) null
     _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "type", new String("hidden"));
-    // /WEB-INF/jsp/stock.jsp(52,11) null
+    // /WEB-INF/jsp/stock.jsp(54,11) null
     _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "class", new String("form-control"));
-    // /WEB-INF/jsp/stock.jsp(52,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(54,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f1.setPath("nombre");
-    // /WEB-INF/jsp/stock.jsp(52,11) null
+    // /WEB-INF/jsp/stock.jsp(54,11) null
     _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "value", (java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.nombre}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int[] _jspx_push_body_count_form_005finput_005f1 = new int[] { 0 };
     try {
@@ -368,11 +375,11 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f2 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f2.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/stock.jsp(55,7) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(57,7) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f2.setMethod("post");
-    // /WEB-INF/jsp/stock.jsp(55,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(57,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f2.setAction("eliminarStock");
-    // /WEB-INF/jsp/stock.jsp(55,7) null
+    // /WEB-INF/jsp/stock.jsp(57,7) null
     _jspx_th_form_005fform_005f2.setDynamicAttribute(null, "class", new String("manejoStock"));
     int[] _jspx_push_body_count_form_005fform_005f2 = new int[] { 0 };
     try {
@@ -381,7 +388,7 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
         do {
           out.write("\n");
           out.write("\t\t\t    \t<div class=\"form-group col-md-2\">\n");
-          out.write("        \t\t\t\t<input  class=\"form-control\"name=\"cantidad\"/>\n");
+          out.write("        \t\t\t\t<input  class=\"form-control number\"name=\"cantidad\" required/>\n");
           out.write("   \t\t\t\t\t </div>\n");
           out.write("\t\t\t        ");
           if (_jspx_meth_form_005finput_005f2(_jspx_th_form_005fform_005f2, _jspx_page_context, _jspx_push_body_count_form_005fform_005f2))
@@ -416,13 +423,13 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f2 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fpath_005fclass_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f2.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f2);
-    // /WEB-INF/jsp/stock.jsp(59,11) null
+    // /WEB-INF/jsp/stock.jsp(61,11) null
     _jspx_th_form_005finput_005f2.setDynamicAttribute(null, "type", new String("hidden"));
-    // /WEB-INF/jsp/stock.jsp(59,11) null
+    // /WEB-INF/jsp/stock.jsp(61,11) null
     _jspx_th_form_005finput_005f2.setDynamicAttribute(null, "class", new String("form-control"));
-    // /WEB-INF/jsp/stock.jsp(59,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(61,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f2.setPath("nombre");
-    // /WEB-INF/jsp/stock.jsp(59,11) null
+    // /WEB-INF/jsp/stock.jsp(61,11) null
     _jspx_th_form_005finput_005f2.setDynamicAttribute(null, "value", (java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.nombre}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int[] _jspx_push_body_count_form_005finput_005f2 = new int[] { 0 };
     try {

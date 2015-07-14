@@ -5,6 +5,8 @@
 	<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css"/>
+	
+
 	<title></title>
 </head>
 <body>
@@ -47,14 +49,14 @@
 			  
 			    <form:form method="post" action="agregarStock" class="manejoStock" >
 			    	<div class="form-group col-md-2">
-        				<input  class="form-control"name="cantidad"/>
+        				<input  class="form-control number"name="cantidad" required/>
    					 </div>
 			        <form:input type="hidden"class="form-control" path="nombre" value="${dato.key.nombre}"></form:input>
 					<input class="btn btn-info col-md-1" type="submit" value="+">
 			    </form:form>
 			    <form:form method="post" action="eliminarStock" class="manejoStock" >
 			    	<div class="form-group col-md-2">
-        				<input  class="form-control"name="cantidad"/>
+        				<input  class="form-control number"name="cantidad" required/>
    					 </div>
 			        <form:input type="hidden"class="form-control" path="nombre" value="${dato.key.nombre}"></form:input>
 					<input class="btn btn-danger col-md-1" type="submit" value="-">
@@ -71,6 +73,7 @@
 </div>
 
 
-
+<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
+	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
 </body>
 </html>

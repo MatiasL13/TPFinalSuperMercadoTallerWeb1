@@ -3,6 +3,8 @@
 <title>Inicio</title>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css"/>
+    <script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
+  <script src="<%=request.getContextPath()%>/js/script.js" ></script>
 </head>
 <body>
    <nav class="navbar navbar-default" role="navigation">
