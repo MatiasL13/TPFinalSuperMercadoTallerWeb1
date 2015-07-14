@@ -59,6 +59,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t<link rel=\"stylesheet\" href=\"");
       out.print(request.getContextPath());
       out.write("/css/style.css\"/>\n");
+      out.write("    <script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/jquery.js\" ></script>\n");
+      out.write("  <script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/script.js\" ></script>\n");
       out.write("</head>\n");
       out.write("<body>\n");
       out.write("   <nav class=\"navbar navbar-default\" role=\"navigation\">\n");
