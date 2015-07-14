@@ -5,6 +5,8 @@
 	<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css"/>
+	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
+	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
 
 
 	<title></title>
@@ -25,6 +27,14 @@
 
 	<legend>Productos en carrito</legend>
 </div>
+<div class="row">
+	<div id="msjAlert00" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center bg-warning hidden">
+		<p><span class="glyphicon glyphicon-warning-sign"></span>&nbsp; ATENCI&Oacute;N: Est&aacute; seguro de querer cancelar su compra? Esta operación vaciar&aacute; su carrito de compras.</p>
+		<a href="<%=request.getContextPath()%>/carrito/vaciar" class="btn btn-warning">Aceptar</a>&nbsp;
+		<input type="button" onclick="cancelarVaciarCarrito()" class="btn btn-warning" value="cancelar"/>
+	</div>
+</div>
+
 	<div class="col-md-6 col-md-offset">
 	<table class="table">
 	<tr>
@@ -85,7 +95,7 @@
 				<a href="<%=request.getContextPath()%>/carrito/comprar" class="btn btn-primary btn-block opcionesCarrito">Confirmar</a>
 		 	</div>
 		 	<div class="col-md-6">
-				<a href="<%=request.getContextPath()%>/carrito/vaciar" class="btn btn-danger btn-block opcionesCarrito">Cancelar</a>
+		 		<input type="button" onclick="vaciarCarritoCompras()" class="btn btn-danger btn-block opcionesCarrito" value="Cancelar"/>
 		 	</div>
 		</div>
 

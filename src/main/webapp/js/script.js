@@ -59,6 +59,14 @@ function cancelaMoverCarrito(){
 }//End function cancelaMoverCarrito
 
 
+function vaciarCarritoCompras(){
+	$("#msjAlert00").removeClass("hidden");
+}
+
+function cancelarVaciarCarrito(){
+	$("#msjAlert00").addClass("hidden");
+}
+
 $('.number').keydown(function(event) {
                // Allow special chars + arrows 
                if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 
