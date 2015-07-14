@@ -45,6 +45,18 @@
 <div>
 	<legend>Productos en Stock</legend>
 </div>
+
+<!-- COMIENZO MENSAJES -->
+<div class="row">
+	<div id="msjAlert00" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center bg-warning hidden">
+		<p><span class="glyphicon glyphicon-warning-sign"></span>&nbsp; Se ha ingresado una cantidad incorrecta. Por favor rev&iacute;sela</p>
+		<input type="button" onclick="hideMsj('msjAlert00')" class="btn btn-warning" value="Aceptar"/>
+	</div>
+</div>
+<!-- FIN MENSAJES -->
+
+
+
 	<div class="col-md-10 col-md-offset-1 center">
 	<table class="table">
 	<tr>
@@ -67,19 +79,20 @@
 		</td>
 		<td>
 			  
-			    <form:form method="post" action="agregarStock" class="manejoStock" >
+			    <form:form method="post" action="agregarStock" class="manejoStock" id="frmAgregaStock_${dato.key.nombre}" >
 			    	<div class="form-group col-md-2">
-        				<input  class="form-control number"name="cantidad" required/>
+        				<input  class="form-control number"name="cantidad" id="cantAdd_${dato.key.nombre}" required/>
    					 </div>
 			        <form:input type="hidden"class="form-control" path="nombre" value="${dato.key.nombre}"></form:input>
-					<input class="btn btn-info col-md-1" type="submit" value="+">
+					<input class="btn btn-info col-md-1" type="button" onclick="validaAgregaStock('${dato.key.nombre}')" value="+">
 			    </form:form>
-			    <form:form method="post" action="eliminarStock" class="manejoStock" >
+			    
+			    <form:form method="post" action="eliminarStock" class="manejoStock" id="frmQuitaStock_${dato.key.nombre}" >
 			    	<div class="form-group col-md-2">
-        				<input  class="form-control number"name="cantidad" required/>
+        				<input  class="form-control number"name="cantidad" id="cantRemove_${dato.key.nombre}" required/>
    					 </div>
 			        <form:input type="hidden"class="form-control" path="nombre" value="${dato.key.nombre}"></form:input>
-					<input class="btn btn-danger col-md-1" type="submit" value="-">
+					<input class="btn btn-danger col-md-1" type="button" onclick="validaQuitaStock('${dato.key.nombre}')" value="-">
 			    </form:form>
 		</td>
 	</tr>

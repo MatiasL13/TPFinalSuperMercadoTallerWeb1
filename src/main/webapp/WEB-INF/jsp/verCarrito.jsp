@@ -47,13 +47,19 @@
 
 	<legend>Productos en carrito</legend>
 </div>
+<!-- COMIENZO MENSAJES -->
 <div class="row">
 	<div id="msjAlert00" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center bg-warning hidden">
 		<p><span class="glyphicon glyphicon-warning-sign"></span>&nbsp; ATENCI&Oacute;N: Est&aacute; seguro de querer cancelar su compra? Esta operación vaciar&aacute; su carrito de compras.</p>
 		<a href="<%=request.getContextPath()%>/carrito/vaciar" class="btn btn-warning">Aceptar</a>&nbsp;
 		<input type="button" onclick="cancelarVaciarCarrito()" class="btn btn-warning" value="cancelar"/>
 	</div>
+	<div id="msjAlert01" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center bg-warning hidden">
+		<p><span class="glyphicon glyphicon-warning-sign"></span>&nbsp; Por favor ingrese un descuento.</p>
+		<input type="button" onclick="hideMsj('msjAlert01')" class="btn btn-warning" value="Aceptar"/>
+	</div>
 </div>
+<!-- FIN MENSAJES -->
 
 	<div class="col-md-6 col-md-offset">
 	<table class="table">
@@ -79,7 +85,7 @@
 			</div>
 
 			<div class="col-md-6">
-				 <form:form method="post" action="/carrito/agregar/descuento" >
+				 <form:form method="post" id="frmCalculoDescuento" action="/carrito/agregar/descuento" >
 			   		<div class="col-md-7">
 						<select name="tipo" class="form-control">
 						  <option value="0">Porcentaje</option>
@@ -87,10 +93,10 @@
 						</select>
 					</div>
 					<div class="col-md-5">
-						<input type="number" class="form-control" name="cantidad"/> 
+						<input type="number" class="form-control" id="cantidadDescuento" name="cantidad"/> 
 					</div>
 					<div class="col-md-12">
-					<input class="btn btn-info btn-block " type="submit" value="Aplicar descuento">
+					<input onclick="validarDescuento()" class="btn btn-info btn-block " type="button" value="Aplicar descuento">
 					</div>
 				</form:form>
 			</div>
