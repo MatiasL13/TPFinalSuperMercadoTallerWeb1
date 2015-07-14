@@ -60,74 +60,101 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("<html>\n");
-      out.write("<head>\n");
-      out.write("\n");
-      out.write("\t\n");
-      out.write("\t\n");
+      out.write("<html>\r\n");
+      out.write("<head>\r\n");
+      out.write("\r\n");
+      out.write("\t\r\n");
+      out.write("\t\r\n");
       out.write("\t<link rel=\"stylesheet\" href=\"");
       out.print(request.getContextPath());
-      out.write("/css/bootstrap.css\"/>\n");
+      out.write("/css/bootstrap.css\"/>\r\n");
       out.write("\t<link rel=\"stylesheet\" href=\"");
       out.print(request.getContextPath());
-      out.write("/css/style.css\"/>\n");
-      out.write("\t\n");
-      out.write("\n");
-      out.write("\t<title></title>\n");
-      out.write("</head>\n");
-      out.write("<body>\n");
-      out.write("\t <nav class=\"navbar navbar-default\" role=\"navigation\">\n");
-      out.write("   <div class=\"header col-md-12\">      \n");
-      out.write("  \n");
-      out.write("   </div> \n");
-      out.write(" \n");
-      out.write("  <ul class=\"nav navbar-nav\" >\n");
-      out.write("      <li style=\"display: inline;\" ><a href=\"");
+      out.write("/css/style.css\"/>\r\n");
+      out.write("\t\r\n");
+      out.write("\r\n");
+      out.write("\t<title></title>\r\n");
+      out.write("</head>\r\n");
+      out.write("<body>\r\n");
+      out.write("\t <nav class=\"navbar navbar-default\" role=\"navigation\">\r\n");
+      out.write("   <div class=\"header col-md-12\">      \r\n");
+      out.write("  \r\n");
+      out.write("   </div> \r\n");
+      out.write(" \r\n");
+      out.write("    <nav class=\"navbar navbar-default navbar-fixed-top\">\r\n");
+      out.write("        <div class=\"container\">\r\n");
+      out.write("            <div class=\"navbar-header page-scroll\">\r\n");
+      out.write("                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\r\n");
+      out.write("                    <span class=\"sr-only\">Toggle navigation</span>\r\n");
+      out.write("                    <span class=\"icon-bar\"></span>\r\n");
+      out.write("                    <span class=\"icon-bar\"></span>\r\n");
+      out.write("                    <span class=\"icon-bar\"></span>\r\n");
+      out.write("                </button>\r\n");
+      out.write("                <a class=\"navbar-brand page-scroll\" href=\"#page-top\"><img src=\"");
       out.print(request.getContextPath());
-      out.write("\">HOME</a></li>\n");
-      out.write("      <li style=\"display: inline;\"  ><a href=\"");
+      out.write("/img/logo.png\" class=\"logoResponsive\" alt=\"logo principal\"/></a>\r\n");
+      out.write("            </div>\r\n");
+      out.write("\r\n");
+      out.write("            <!-- Collect the nav links, forms, and other content for toggling -->\r\n");
+      out.write("            <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\r\n");
+      out.write("                <ul class=\"nav navbar-nav navbar-right\">\r\n");
+      out.write("                    <li class=\"hidden\">\r\n");
+      out.write("                        <a href=\"#page-top\"></a>\r\n");
+      out.write("                    </li>\r\n");
+      out.write("                    <li>\r\n");
+      out.write("                        <a class=\"page-scroll\" href=\"");
       out.print(request.getContextPath());
-      out.write("/carrito/ver\">Carrito</a></li>     \n");
-      out.write("      <li style=\"display: inline;\" class=\"active\"><a href=\"");
+      out.write("\">HOME</a>\r\n");
+      out.write("                    </li>\r\n");
+      out.write("                    <li>\r\n");
+      out.write("                        <a class=\"page-scroll\" href=\"");
       out.print(request.getContextPath());
-      out.write("/stock/ver\">stock</a></li>\n");
-      out.write("    </ul>  \n");
-      out.write("</nav>\n");
-      out.write("<div>\n");
-      out.write("<div>\n");
-      out.write("\t<legend>Productos en Stock</legend>\n");
-      out.write("</div>\n");
-      out.write("\t<div class=\"col-md-10 col-md-offset-1 center\">\n");
-      out.write("\t<table class=\"table\">\n");
-      out.write("\t<tr>\n");
-      out.write("\t\t<td>Nombre</td>\n");
-      out.write("\t\t<td>Precio</td>\n");
-      out.write("\t\t<td>Cantidad</td>\n");
-      out.write("\t\t<td>Controles</td>\n");
-      out.write("\t\t<td>Manejo de Stock</td>\n");
-      out.write("\t</tr>\n");
+      out.write("/carrito/ver\">Carrito</a>\r\n");
+      out.write("                    </li>\r\n");
+      out.write("                    <li>\r\n");
+      out.write("                        <a class=\"page-scroll active\" href=\"");
+      out.print(request.getContextPath());
+      out.write("/stock/ver\">Stock</a>\r\n");
+      out.write("                    </li>\r\n");
+      out.write("               </ul>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </div>\r\n");
+      out.write("    </nav>\r\n");
+      out.write("<div>\r\n");
+      out.write("<div>\r\n");
+      out.write("\t<legend>Productos en Stock</legend>\r\n");
+      out.write("</div>\r\n");
+      out.write("\t<div class=\"col-md-10 col-md-offset-1 center\">\r\n");
+      out.write("\t<table class=\"table\">\r\n");
+      out.write("\t<tr>\r\n");
+      out.write("\t\t<td>Nombre</td>\r\n");
+      out.write("\t\t<td>Precio</td>\r\n");
+      out.write("\t\t<td>Cantidad</td>\r\n");
+      out.write("\t\t<td>Controles</td>\r\n");
+      out.write("\t\t<td>Manejo de Stock</td>\r\n");
+      out.write("\t</tr>\r\n");
       out.write("\t");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\n");
-      out.write("\t</table>\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\t</table>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("<a  class=\"btn btn-success col-md-2 col-md-offset-9 \" href=\"");
       out.print(request.getContextPath());
-      out.write("/stock/agregar\">agregar Producto</a>\n");
-      out.write("\t</div>\n");
-      out.write("</div>\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("/stock/agregar\">agregar Producto</a>\r\n");
+      out.write("\t</div>\r\n");
+      out.write("</div>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("<script src=\"");
       out.print(request.getContextPath());
-      out.write("/js/jquery.js\" ></script>\n");
+      out.write("/js/jquery.js\" ></script>\r\n");
       out.write("\t<script src=\"");
       out.print(request.getContextPath());
-      out.write("/js/script.js\" ></script>\n");
-      out.write("</body>\n");
+      out.write("/js/script.js\" ></script>\r\n");
+      out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -150,44 +177,44 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent(null);
-    // /WEB-INF/jsp/stock.jsp(37,1) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/stock.jsp(37,1) '${stock}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${stock}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/stock.jsp(37,1) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(62,1) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/stock.jsp(62,1) '${stock}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${stock}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/stock.jsp(62,1) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVar("dato");
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f0 = _jspx_th_c_005fforEach_005f0.doStartTag();
       if (_jspx_eval_c_005fforEach_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
-          out.write("\t<tr>\n");
+          out.write("\r\n");
+          out.write("\t<tr>\r\n");
           out.write("\t\t<td>");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.nombre}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</td>\n");
+          out.write("</td>\r\n");
           out.write("\t\t<td>");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.precio}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</td>\n");
+          out.write("</td>\r\n");
           out.write("\t\t<td>");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.value}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</td>\n");
-          out.write("\t\t<td>\n");
+          out.write("</td>\r\n");
+          out.write("\t\t<td>\r\n");
           out.write("\t\t\t    ");
           if (_jspx_meth_form_005fform_005f0(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
-          out.write("\n");
-          out.write("\t\t</td>\n");
-          out.write("\t\t<td>\n");
-          out.write("\t\t\t  \n");
+          out.write("\r\n");
+          out.write("\t\t</td>\r\n");
+          out.write("\t\t<td>\r\n");
+          out.write("\t\t\t  \r\n");
           out.write("\t\t\t    ");
           if (_jspx_meth_form_005fform_005f1(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
-          out.write("\n");
+          out.write("\r\n");
           out.write("\t\t\t    ");
           if (_jspx_meth_form_005fform_005f2(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
-          out.write("\n");
-          out.write("\t\t</td>\n");
-          out.write("\t</tr>\n");
+          out.write("\r\n");
+          out.write("\t\t</td>\r\n");
+          out.write("\t</tr>\r\n");
           out.write("\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -216,23 +243,23 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/stock.jsp(43,7) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(68,7) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setMethod("post");
-    // /WEB-INF/jsp/stock.jsp(43,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(68,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setAction("eliminarProductoStock");
-    // /WEB-INF/jsp/stock.jsp(43,7) null
+    // /WEB-INF/jsp/stock.jsp(68,7) null
     _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "class", new String("col-md-12"));
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_form_005fform_005f0 = _jspx_th_form_005fform_005f0.doStartTag();
       if (_jspx_eval_form_005fform_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
+          out.write("\r\n");
           out.write("\t\t\t        ");
           if (_jspx_meth_form_005finput_005f0(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
-          out.write("\n");
-          out.write("\t\t\t\t\t<input class=\"btn btn-danger col-md-12 \" type=\"submit\" value=\"Eliminar\">\n");
+          out.write("\r\n");
+          out.write("\t\t\t\t\t<input class=\"btn btn-danger col-md-12 \" type=\"submit\" value=\"Eliminar\">\r\n");
           out.write("\t\t\t\t");
           int evalDoAfterBody = _jspx_th_form_005fform_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -261,13 +288,13 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f0 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fpath_005fclass_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/stock.jsp(44,11) null
+    // /WEB-INF/jsp/stock.jsp(69,11) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "type", new String("hidden"));
-    // /WEB-INF/jsp/stock.jsp(44,11) null
+    // /WEB-INF/jsp/stock.jsp(69,11) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "class", new String("form-control"));
-    // /WEB-INF/jsp/stock.jsp(44,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(69,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f0.setPath("nombre");
-    // /WEB-INF/jsp/stock.jsp(44,11) null
+    // /WEB-INF/jsp/stock.jsp(69,11) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "value", (java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.nombre}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int[] _jspx_push_body_count_form_005finput_005f0 = new int[] { 0 };
     try {
@@ -294,26 +321,26 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f1 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f1.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/stock.jsp(50,7) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(75,7) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f1.setMethod("post");
-    // /WEB-INF/jsp/stock.jsp(50,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(75,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f1.setAction("agregarStock");
-    // /WEB-INF/jsp/stock.jsp(50,7) null
+    // /WEB-INF/jsp/stock.jsp(75,7) null
     _jspx_th_form_005fform_005f1.setDynamicAttribute(null, "class", new String("manejoStock"));
     int[] _jspx_push_body_count_form_005fform_005f1 = new int[] { 0 };
     try {
       int _jspx_eval_form_005fform_005f1 = _jspx_th_form_005fform_005f1.doStartTag();
       if (_jspx_eval_form_005fform_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
-          out.write("\t\t\t    \t<div class=\"form-group col-md-2\">\n");
-          out.write("        \t\t\t\t<input  class=\"form-control number\"name=\"cantidad\" required/>\n");
-          out.write("   \t\t\t\t\t </div>\n");
+          out.write("\r\n");
+          out.write("\t\t\t    \t<div class=\"form-group col-md-2\">\r\n");
+          out.write("        \t\t\t\t<input  class=\"form-control number\"name=\"cantidad\" required/>\r\n");
+          out.write("   \t\t\t\t\t </div>\r\n");
           out.write("\t\t\t        ");
           if (_jspx_meth_form_005finput_005f1(_jspx_th_form_005fform_005f1, _jspx_page_context, _jspx_push_body_count_form_005fform_005f1))
             return true;
-          out.write("\n");
-          out.write("\t\t\t\t\t<input class=\"btn btn-info col-md-1\" type=\"submit\" value=\"+\">\n");
+          out.write("\r\n");
+          out.write("\t\t\t\t\t<input class=\"btn btn-info col-md-1\" type=\"submit\" value=\"+\">\r\n");
           out.write("\t\t\t    ");
           int evalDoAfterBody = _jspx_th_form_005fform_005f1.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -342,13 +369,13 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f1 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fpath_005fclass_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f1.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f1);
-    // /WEB-INF/jsp/stock.jsp(54,11) null
+    // /WEB-INF/jsp/stock.jsp(79,11) null
     _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "type", new String("hidden"));
-    // /WEB-INF/jsp/stock.jsp(54,11) null
+    // /WEB-INF/jsp/stock.jsp(79,11) null
     _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "class", new String("form-control"));
-    // /WEB-INF/jsp/stock.jsp(54,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(79,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f1.setPath("nombre");
-    // /WEB-INF/jsp/stock.jsp(54,11) null
+    // /WEB-INF/jsp/stock.jsp(79,11) null
     _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "value", (java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.nombre}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int[] _jspx_push_body_count_form_005finput_005f1 = new int[] { 0 };
     try {
@@ -375,26 +402,26 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f2 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f2.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/stock.jsp(57,7) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(82,7) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f2.setMethod("post");
-    // /WEB-INF/jsp/stock.jsp(57,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(82,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f2.setAction("eliminarStock");
-    // /WEB-INF/jsp/stock.jsp(57,7) null
+    // /WEB-INF/jsp/stock.jsp(82,7) null
     _jspx_th_form_005fform_005f2.setDynamicAttribute(null, "class", new String("manejoStock"));
     int[] _jspx_push_body_count_form_005fform_005f2 = new int[] { 0 };
     try {
       int _jspx_eval_form_005fform_005f2 = _jspx_th_form_005fform_005f2.doStartTag();
       if (_jspx_eval_form_005fform_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
-          out.write("\t\t\t    \t<div class=\"form-group col-md-2\">\n");
-          out.write("        \t\t\t\t<input  class=\"form-control number\"name=\"cantidad\" required/>\n");
-          out.write("   \t\t\t\t\t </div>\n");
+          out.write("\r\n");
+          out.write("\t\t\t    \t<div class=\"form-group col-md-2\">\r\n");
+          out.write("        \t\t\t\t<input  class=\"form-control number\"name=\"cantidad\" required/>\r\n");
+          out.write("   \t\t\t\t\t </div>\r\n");
           out.write("\t\t\t        ");
           if (_jspx_meth_form_005finput_005f2(_jspx_th_form_005fform_005f2, _jspx_page_context, _jspx_push_body_count_form_005fform_005f2))
             return true;
-          out.write("\n");
-          out.write("\t\t\t\t\t<input class=\"btn btn-danger col-md-1\" type=\"submit\" value=\"-\">\n");
+          out.write("\r\n");
+          out.write("\t\t\t\t\t<input class=\"btn btn-danger col-md-1\" type=\"submit\" value=\"-\">\r\n");
           out.write("\t\t\t    ");
           int evalDoAfterBody = _jspx_th_form_005fform_005f2.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -423,13 +450,13 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f2 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fpath_005fclass_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f2.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f2);
-    // /WEB-INF/jsp/stock.jsp(61,11) null
+    // /WEB-INF/jsp/stock.jsp(86,11) null
     _jspx_th_form_005finput_005f2.setDynamicAttribute(null, "type", new String("hidden"));
-    // /WEB-INF/jsp/stock.jsp(61,11) null
+    // /WEB-INF/jsp/stock.jsp(86,11) null
     _jspx_th_form_005finput_005f2.setDynamicAttribute(null, "class", new String("form-control"));
-    // /WEB-INF/jsp/stock.jsp(61,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/stock.jsp(86,11) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f2.setPath("nombre");
-    // /WEB-INF/jsp/stock.jsp(61,11) null
+    // /WEB-INF/jsp/stock.jsp(86,11) null
     _jspx_th_form_005finput_005f2.setDynamicAttribute(null, "value", (java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.nombre}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int[] _jspx_push_body_count_form_005finput_005f2 = new int[] { 0 };
     try {

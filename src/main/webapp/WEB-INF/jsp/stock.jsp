@@ -5,22 +5,42 @@
 	<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css"/>
+	<script src="<%=request.getContextPath()%>/js/bootstrap.js" ></script>
 	
 
 	<title></title>
 </head>
 <body>
-	 <nav class="navbar navbar-default" role="navigation">
-   <div class="header col-md-12">      
-  
-   </div> 
- 
-  <ul class="nav navbar-nav" >
-      <li style="display: inline;" ><a href="<%=request.getContextPath()%>">HOME</a></li>
-      <li style="display: inline;"  ><a href="<%=request.getContextPath()%>/carrito/ver">Carrito</a></li>     
-      <li style="display: inline;" class="active"><a href="<%=request.getContextPath()%>/stock/ver">stock</a></li>
-    </ul>  
-</nav>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="<%=request.getContextPath()%>/img/logo.png" class="logoResponsive" alt="logo principal"/></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="<%=request.getContextPath()%>">HOME</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="<%=request.getContextPath()%>/carrito/ver">Carrito</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll active" href="<%=request.getContextPath()%>/stock/ver">Stock</a>
+                    </li>
+               </ul>
+            </div>
+        </div>
+    </nav>
 <div>
 <div>
 	<legend>Productos en Stock</legend>
