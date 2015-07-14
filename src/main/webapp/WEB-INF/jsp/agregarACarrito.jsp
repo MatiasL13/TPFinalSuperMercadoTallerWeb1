@@ -29,11 +29,10 @@
 	
 
 		<div class="col-md-12 ">
-			<div id="msjError00" class="alert alert-danger hidden text-center mensajes" role="alert">
-			</div>
-			<div   id="msjOK" class="alert alert-success ${status} text-center" role="alert">
+			<div id="msjError00" class="alert alert-danger hidden text-center mensajes" role="alert"></div>
+			<div id="msjOK" class="alert alert-success ${status} text-center" role="alert">
 				<p class="bg-success text-center ">
-					<span class="glyphicon glyphicon-warning-sign">${msjCargaOk}</span>
+					<span class="glyphicon glyphicon-ok"></span>&nbsp;${msjCargaOk}
 				 </p>
 			</div>
 		</div>
