@@ -1,30 +1,50 @@
 <html>
 <head>
 
-	<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-	<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@	taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@	taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap.css"/>
+	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/small-business.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css"/>
 	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
 	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
+	<script src="<%=request.getContextPath()%>/js/bootstrap.js" ></script>
 
 
-	<title></title>
+	<title>:: Supermercado ::</title>
 </head>
-<body>
-	<nav class="navbar navbar-default" role="navigation">
-   <div class="header col-md-12">      
-  
-   </div> 
- 
-  <ul class="nav navbar-nav" >
-      <li style="display: inline;" ><a href="<%=request.getContextPath()%>">HOME</a></li>
-      <li style="display: inline;" class="active" ><a href="<%=request.getContextPath()%>/carrito/ver">Carrito</a></li>     
-      <li style="display: inline;" ><a href="<%=request.getContextPath()%>/stock/ver">stock</a></li>
-    </ul>  
-</nav>
-<div>
+<body  id="page-top">
 
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="<%=request.getContextPath()%>/css/img/logo.png" style="height:30px;" alt="logo principal"/>Supermercado Online</a>
+            </div>
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="<%=request.getContextPath()%>">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll active" href="<%=request.getContextPath()%>/carrito/ver">Carrito</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="<%=request.getContextPath()%>/stock/ver">Stock</a>
+                    </li>
+               </ul>
+            </div>
+        </div>
+    </nav>
+<div>
 	<legend>Productos en carrito</legend>
 </div>
 <!-- COMIENZO MENSAJES -->

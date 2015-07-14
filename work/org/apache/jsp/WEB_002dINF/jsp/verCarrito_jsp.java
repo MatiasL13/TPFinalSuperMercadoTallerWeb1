@@ -60,11 +60,14 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("\r\n");
-      out.write("\t\r\n");
-      out.write("\t\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("\t<link rel=\"stylesheet\" href=\"");
       out.print(request.getContextPath());
       out.write("/css/bootstrap.css\"/>\r\n");
+      out.write("\t<link rel=\"stylesheet\" href=\"");
+      out.print(request.getContextPath());
+      out.write("/css/small-business.css\"/>\r\n");
       out.write("\t<link rel=\"stylesheet\" href=\"");
       out.print(request.getContextPath());
       out.write("/css/style.css\"/>\r\n");
@@ -74,30 +77,53 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t<script src=\"");
       out.print(request.getContextPath());
       out.write("/js/script.js\" ></script>\r\n");
+      out.write("\t<script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/bootstrap.js\" ></script>\r\n");
       out.write("\r\n");
       out.write("\r\n");
-      out.write("\t<title></title>\r\n");
+      out.write("\t<title>:: Supermercado ::</title>\r\n");
       out.write("</head>\r\n");
-      out.write("<body>\r\n");
-      out.write("\t<nav class=\"navbar navbar-default\" role=\"navigation\">\r\n");
-      out.write("   <div class=\"header col-md-12\">      \r\n");
-      out.write("  \r\n");
-      out.write("   </div> \r\n");
-      out.write(" \r\n");
-      out.write("  <ul class=\"nav navbar-nav\" >\r\n");
-      out.write("      <li style=\"display: inline;\" ><a href=\"");
-      out.print(request.getContextPath());
-      out.write("\">HOME</a></li>\r\n");
-      out.write("      <li style=\"display: inline;\" class=\"active\" ><a href=\"");
-      out.print(request.getContextPath());
-      out.write("/carrito/ver\">Carrito</a></li>     \r\n");
-      out.write("      <li style=\"display: inline;\" ><a href=\"");
-      out.print(request.getContextPath());
-      out.write("/stock/ver\">stock</a></li>\r\n");
-      out.write("    </ul>  \r\n");
-      out.write("</nav>\r\n");
-      out.write("<div>\r\n");
+      out.write("<body  id=\"page-top\">\r\n");
       out.write("\r\n");
+      out.write("    <nav class=\"navbar navbar-default navbar-fixed-top\">\r\n");
+      out.write("        <div class=\"container\">\r\n");
+      out.write("            <div class=\"navbar-header page-scroll\">\r\n");
+      out.write("                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\r\n");
+      out.write("                    <span class=\"sr-only\">Toggle navigation</span>\r\n");
+      out.write("                    <span class=\"icon-bar\"></span>\r\n");
+      out.write("                    <span class=\"icon-bar\"></span>\r\n");
+      out.write("                    <span class=\"icon-bar\"></span>\r\n");
+      out.write("                </button>\r\n");
+      out.write("                <a class=\"navbar-brand page-scroll\" href=\"#page-top\"><img src=\"");
+      out.print(request.getContextPath());
+      out.write("/css/img/logo.png\" style=\"height:30px;\" alt=\"logo principal\"/>Supermercado Online</a>\r\n");
+      out.write("            </div>\r\n");
+      out.write("           <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\r\n");
+      out.write("                <ul class=\"nav navbar-nav navbar-right\">\r\n");
+      out.write("                    <li class=\"hidden\">\r\n");
+      out.write("                        <a href=\"#page-top\"></a>\r\n");
+      out.write("                    </li>\r\n");
+      out.write("                    <li>\r\n");
+      out.write("                        <a class=\"page-scroll\" href=\"");
+      out.print(request.getContextPath());
+      out.write("\">Inicio</a>\r\n");
+      out.write("                    </li>\r\n");
+      out.write("                    <li>\r\n");
+      out.write("                        <a class=\"page-scroll active\" href=\"");
+      out.print(request.getContextPath());
+      out.write("/carrito/ver\">Carrito</a>\r\n");
+      out.write("                    </li>\r\n");
+      out.write("                    <li>\r\n");
+      out.write("                        <a class=\"page-scroll\" href=\"");
+      out.print(request.getContextPath());
+      out.write("/stock/ver\">Stock</a>\r\n");
+      out.write("                    </li>\r\n");
+      out.write("               </ul>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </div>\r\n");
+      out.write("    </nav>\r\n");
+      out.write("<div>\r\n");
       out.write("\t<legend>Productos en carrito</legend>\r\n");
       out.write("</div>\r\n");
       out.write("<!-- COMIENZO MENSAJES -->\r\n");
@@ -210,9 +236,15 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent(null);
+<<<<<<< HEAD
     // /WEB-INF/jsp/verCarrito.jsp(50,1) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/verCarrito.jsp(50,1) '${productos}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${productos}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     // /WEB-INF/jsp/verCarrito.jsp(50,1) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+=======
+    // /WEB-INF/jsp/verCarrito.jsp(70,1) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/verCarrito.jsp(70,1) '${productos}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${productos}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/verCarrito.jsp(70,1) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+>>>>>>> 9e3d278e49a3fba436cba9b37ad8678ea7f964fc
     _jspx_th_c_005fforEach_005f0.setVar("dato");
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
@@ -257,11 +289,19 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fid_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent(null);
+<<<<<<< HEAD
     // /WEB-INF/jsp/verCarrito.jsp(68,5) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setMethod("post");
     // /WEB-INF/jsp/verCarrito.jsp(68,5) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setId("frmCalculoDescuento");
     // /WEB-INF/jsp/verCarrito.jsp(68,5) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+=======
+    // /WEB-INF/jsp/verCarrito.jsp(88,5) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fform_005f0.setMethod("post");
+    // /WEB-INF/jsp/verCarrito.jsp(88,5) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fform_005f0.setId("frmCalculoDescuento");
+    // /WEB-INF/jsp/verCarrito.jsp(88,5) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+>>>>>>> 9e3d278e49a3fba436cba9b37ad8678ea7f964fc
     _jspx_th_form_005fform_005f0.setAction("/carrito/agregar/descuento");
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {

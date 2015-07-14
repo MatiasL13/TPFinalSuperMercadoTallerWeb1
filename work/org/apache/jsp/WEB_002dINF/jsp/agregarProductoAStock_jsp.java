@@ -63,39 +63,39 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n");
-      out.write(" \n");
-      out.write(" \n");
-      out.write("\n");
-      out.write(" <html>\n");
-      out.write(" <head>\n");
-      out.write("     <title>Cargar Producto a Stock</title>\n");
+      out.write("\r\n");
+      out.write(" \r\n");
+      out.write(" \r\n");
+      out.write("\r\n");
+      out.write(" <html>\r\n");
+      out.write(" <head>\r\n");
+      out.write("     <title>Cargar Producto a Stock</title>\r\n");
       out.write(" <link rel=\"stylesheet\" href=\"");
       out.print(request.getContextPath());
-      out.write("/css/bootstrap.css\"/>\n");
+      out.write("/css/bootstrap.css\"/>\r\n");
       out.write("    <link rel=\"stylesheet\" href=\"");
       out.print(request.getContextPath());
-      out.write("/css/style.css\"/>\n");
-      out.write("\n");
-      out.write(" </head>\n");
-      out.write(" <body>\n");
-      out.write(" \n");
-      out.write(" <legend>Contact Manager</legend>\n");
-      out.write(" <div class=\"col-md-5 col-md-offset-3 center\">\n");
+      out.write("/css/style.css\"/>\r\n");
+      out.write("\r\n");
+      out.write(" </head>\r\n");
+      out.write(" <body>\r\n");
+      out.write(" \r\n");
+      out.write(" <legend>Contact Manager</legend>\r\n");
+      out.write(" <div class=\"col-md-5 col-md-offset-3 center\">\r\n");
       out.write("    ");
       if (_jspx_meth_form_005fform_005f0(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write(" </div>\n");
+      out.write("\r\n");
+      out.write(" </div>\r\n");
       out.write("       <script src=\"");
       out.print(request.getContextPath());
-      out.write("/js/jquery.js\" ></script>\n");
+      out.write("/js/jquery.js\" ></script>\r\n");
       out.write("    <script src=\"");
       out.print(request.getContextPath());
-      out.write("/js/script.js\" ></script>\n");
-      out.write(" </body>\n");
-      out.write(" </html>\n");
-      out.write(" \n");
+      out.write("/js/script.js\" ></script>\r\n");
+      out.write(" </body>\r\n");
+      out.write(" </html>\r\n");
+      out.write(" \r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -128,33 +128,33 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
       int _jspx_eval_form_005fform_005f0 = _jspx_th_form_005fform_005f0.doStartTag();
       if (_jspx_eval_form_005fform_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
-          out.write(" \n");
-          out.write("   <div class=\"form-group\">\n");
+          out.write("\r\n");
+          out.write(" \r\n");
+          out.write("   <div class=\"form-group\">\r\n");
           out.write("   ");
           if (_jspx_meth_form_005flabel_005f0(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
-          out.write("\n");
+          out.write("\r\n");
           out.write("        ");
           if (_jspx_meth_form_005finput_005f0(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
-          out.write(" \n");
-          out.write("    </div>\n");
-          out.write("        \n");
-          out.write("        \n");
+          out.write(" \r\n");
+          out.write("    </div>\r\n");
+          out.write("        \r\n");
+          out.write("        \r\n");
           out.write("    <div class=\"form-group\">");
           if (_jspx_meth_form_005flabel_005f1(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
-          out.write("\n");
+          out.write("\r\n");
           out.write("        ");
           if (_jspx_meth_form_005finput_005f1(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
-          out.write("\n");
-          out.write("    </div>\n");
-          out.write("   \n");
-          out.write("            <input class=\"btn btn-success\" type=\"submit\" value=\"Agregar Producto\">\n");
-          out.write("      \n");
-          out.write("     \n");
+          out.write("\r\n");
+          out.write("    </div>\r\n");
+          out.write("   \r\n");
+          out.write("            <input class=\"btn btn-success\" type=\"submit\" value=\"Agregar Producto\">\r\n");
+          out.write("      \r\n");
+          out.write("     \r\n");
           int evalDoAfterBody = _jspx_th_form_005fform_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
