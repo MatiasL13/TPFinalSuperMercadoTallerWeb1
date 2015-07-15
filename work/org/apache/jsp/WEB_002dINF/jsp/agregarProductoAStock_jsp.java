@@ -14,7 +14,7 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fid_005fclass_005faction;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005flabel_0026_005fpath;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005finput_0026_005frequired_005fpath_005fid_005fclass_005fautofocus_005fnobody;
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005finput_0026_005frequired_005fpath_005fid_005fclass_005fnobody;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005finput_0026_005ftype_005frequired_005fpath_005fmin_005fid_005fclass_005fnobody;
 
   private javax.el.ExpressionFactory _el_expressionfactory;
   private org.apache.AnnotationProcessor _jsp_annotationprocessor;
@@ -27,7 +27,7 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
     _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fid_005fclass_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fform_005flabel_0026_005fpath = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fform_005finput_0026_005frequired_005fpath_005fid_005fclass_005fautofocus_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _005fjspx_005ftagPool_005fform_005finput_0026_005frequired_005fpath_005fid_005fclass_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fform_005finput_0026_005ftype_005frequired_005fpath_005fmin_005fid_005fclass_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
@@ -36,7 +36,7 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
     _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fid_005fclass_005faction.release();
     _005fjspx_005ftagPool_005fform_005flabel_0026_005fpath.release();
     _005fjspx_005ftagPool_005fform_005finput_0026_005frequired_005fpath_005fid_005fclass_005fautofocus_005fnobody.release();
-    _005fjspx_005ftagPool_005fform_005finput_0026_005frequired_005fpath_005fid_005fclass_005fnobody.release();
+    _005fjspx_005ftagPool_005fform_005finput_0026_005ftype_005frequired_005fpath_005fmin_005fid_005fclass_005fnobody.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -80,17 +80,7 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
       out.print(request.getContextPath());
       out.write("/css/style.css\"/>\n");
       out.write("\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">\n");
-      out.write("\t<!-- Scripts -->\n");
-      out.write("   \t<script src=\"");
-      out.print(request.getContextPath());
-      out.write("/js/jquery.js\" ></script>\n");
-      out.write("\t<script src=\"");
-      out.print(request.getContextPath());
-      out.write("/js/script.js\" ></script>\n");
-      out.write("\t<script src=\"");
-      out.print(request.getContextPath());
-      out.write("/js/bootstrap.js\" ></script>\n");
-      out.write("\t<!-- End Scripts -->\n");
+      out.write("\n");
       out.write("\n");
       out.write("\t<title>:: Supermercado ::</title>\n");
       out.write("</head>\n");
@@ -158,6 +148,17 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
       out.write("\n");
       out.write("\t\t </div>\n");
       out.write("\t</div>\n");
+      out.write("\t\t<!-- Scripts -->\n");
+      out.write("   \t<script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/jquery.js\" ></script>\n");
+      out.write("\t<script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/script.js\" ></script>\n");
+      out.write("\t<script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/bootstrap.js\" ></script>\n");
+      out.write("\t<!-- End Scripts -->\n");
       out.write(" </body>\n");
       out.write(" </html>\n");
       out.write(" \n");
@@ -182,13 +183,13 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
     org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fid_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent(null);
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(70,6) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(66,6) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setMethod("post");
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(70,6) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(66,6) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setAction("/stock/agregar/ingresar");
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(70,6) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(66,6) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setId("frmAgregarProducto");
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(70,6) null
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(66,6) null
     _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "class", new String(""));
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {
@@ -218,7 +219,7 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
           out.write("\n");
           out.write("\t\t\t\t    </div>\n");
           out.write("\t\t\t\t   \n");
-          out.write("\t\t            <input class=\"btn btn-success\" type=\"button\" onclick=\"validaAgregarProducto()\" value=\"Agregar Producto\">  \n");
+          out.write("\t\t            <input class=\"btn btn-success\" type=\"submit\"  value=\"Agregar Producto\">  \n");
           out.write("\t\t\t\t");
           int evalDoAfterBody = _jspx_th_form_005fform_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -247,7 +248,7 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
     org.springframework.web.servlet.tags.form.LabelTag _jspx_th_form_005flabel_005f0 = (org.springframework.web.servlet.tags.form.LabelTag) _005fjspx_005ftagPool_005fform_005flabel_0026_005fpath.get(org.springframework.web.servlet.tags.form.LabelTag.class);
     _jspx_th_form_005flabel_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005flabel_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(72,7) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(68,7) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005flabel_005f0.setPath("nombre");
     int[] _jspx_push_body_count_form_005flabel_005f0 = new int[] { 0 };
     try {
@@ -282,15 +283,15 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f0 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005frequired_005fpath_005fid_005fclass_005fautofocus_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(73,12) null
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(69,12) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "autofocus", new String("true"));
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(73,12) null
-    _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "class", new String("form-control"));
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(73,12) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(69,12) null
+    _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "class", new String("form-control alphaonly"));
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(69,12) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f0.setId("nombreProducto");
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(73,12) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(69,12) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f0.setPath("nombre");
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(73,12) null
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(69,12) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "required", new String("true"));
     int[] _jspx_push_body_count_form_005finput_005f0 = new int[] { 0 };
     try {
@@ -317,7 +318,7 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
     org.springframework.web.servlet.tags.form.LabelTag _jspx_th_form_005flabel_005f1 = (org.springframework.web.servlet.tags.form.LabelTag) _005fjspx_005ftagPool_005fform_005flabel_0026_005fpath.get(org.springframework.web.servlet.tags.form.LabelTag.class);
     _jspx_th_form_005flabel_005f1.setPageContext(_jspx_page_context);
     _jspx_th_form_005flabel_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(77,32) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(73,32) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005flabel_005f1.setPath("precio");
     int[] _jspx_push_body_count_form_005flabel_005f1 = new int[] { 0 };
     try {
@@ -349,16 +350,20 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:input
-    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f1 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005frequired_005fpath_005fid_005fclass_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
+    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f1 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005ftype_005frequired_005fpath_005fmin_005fid_005fclass_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f1.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(78,12) null
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(74,12) null
     _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "class", new String("form-control number"));
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(78,12) null
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(74,12) null
+    _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "type", new String("number"));
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(74,12) null
+    _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "min", new String("1"));
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(74,12) null
     _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "required", new String("true"));
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(78,12) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(74,12) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f1.setId("precioProducto");
-    // /WEB-INF/jsp/agregarProductoAStock.jsp(78,12) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/agregarProductoAStock.jsp(74,12) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f1.setPath("precio");
     int[] _jspx_push_body_count_form_005finput_005f1 = new int[] { 0 };
     try {
@@ -372,7 +377,7 @@ public final class agregarProductoAStock_jsp extends org.apache.jasper.runtime.H
       _jspx_th_form_005finput_005f1.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_005finput_005f1.doFinally();
-      _005fjspx_005ftagPool_005fform_005finput_0026_005frequired_005fpath_005fid_005fclass_005fnobody.reuse(_jspx_th_form_005finput_005f1);
+      _005fjspx_005ftagPool_005fform_005finput_0026_005ftype_005frequired_005fpath_005fmin_005fid_005fclass_005fnobody.reuse(_jspx_th_form_005finput_005f1);
     }
     return false;
   }

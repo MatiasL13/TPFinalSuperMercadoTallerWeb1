@@ -8,11 +8,7 @@
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/small-business.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Scripts -->
-   	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
-	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
-	<script src="<%=request.getContextPath()%>/js/bootstrap.js" ></script>
-	<!-- End Scripts -->
+
 
 	<title>:: Supermercado ::</title>
 </head>
@@ -110,6 +106,10 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- Scripts -->
+   	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
+	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
+	<script src="<%=request.getContextPath()%>/js/bootstrap.js" ></script>
+	<!-- End Scripts -->
 </body>
 </html>

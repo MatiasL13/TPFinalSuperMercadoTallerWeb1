@@ -52,7 +52,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("<html>\n");
       out.write("<head>\n");
-      out.write("\n");
+      out.write("<link rel=\"shortcut icon\" href=\"/supermercado/css/img/logo.png\">\n");
       out.write("\n");
       out.write("\n");
       out.write("\t<!-- CSS -->\n");
@@ -66,17 +66,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.print(request.getContextPath());
       out.write("/css/style.css\"/>\n");
       out.write("\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">\n");
-      out.write("\t<!-- Scripts -->\n");
-      out.write("   \t<script src=\"");
-      out.print(request.getContextPath());
-      out.write("/js/jquery.js\" ></script>\n");
-      out.write("\t<script src=\"");
-      out.print(request.getContextPath());
-      out.write("/js/script.js\" ></script>\n");
-      out.write("\t<script src=\"");
-      out.print(request.getContextPath());
-      out.write("/js/bootstrap.js\" ></script>\n");
-      out.write("\t<!-- End Scripts -->\n");
+      out.write("\t\n");
       out.write("\n");
       out.write("\t<title>:: Supermercado ::</title>\n");
       out.write("</head>\n");
@@ -188,7 +178,17 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("    </div>\n");
       out.write("    <!-- /.container -->\n");
-      out.write("\t\n");
+      out.write("\t<!-- Scripts -->\n");
+      out.write("    <script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/jquery.js\" ></script>\n");
+      out.write("  <script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/script.js\" ></script>\n");
+      out.write("  <script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/bootstrap.js\" ></script>\n");
+      out.write("  <!-- End Scripts -->\n");
       out.write("</body>\n");
       out.write("</html>");
     } catch (Throwable t) {

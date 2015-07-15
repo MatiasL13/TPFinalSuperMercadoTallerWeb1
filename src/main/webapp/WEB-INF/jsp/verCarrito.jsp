@@ -8,11 +8,7 @@
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/small-business.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Scripts -->
-   	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
-	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
-	<script src="<%=request.getContextPath()%>/js/bootstrap.js" ></script>
-	<!-- End Scripts -->
+
 
 	<title>:: Supermercado ::</title>
 </head>
@@ -104,7 +100,7 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<input type="number" class="form-control" id="cantidadDescuento" name="cantidad"/> 
+								<input type="number" min="1" class="form-control number" id="cantidadDescuento" name="cantidad" required/> 
 							</div>
 							<div class="form-group">
 								<input onclick="validarDescuento()" class="btn btn-primary  " type="button" value="Aplicar descuento">
@@ -118,10 +114,10 @@
 						<span class="label label-warning">Total Sin Descuento</span>
 						<input type="numeric"  disabled class="form-control" name="" value= "${totalSinDescuentos}"/> 
 						<span class="label label-success">Ahorro</span>
-						<input type="numeric"  disabled class="form-control"  value="${totalAhorro}"name="cantidad"/> 
+						<input type="number" min="1"  disabled class="form-control"  value="${totalAhorro}"name="cantidad"/> 
 						<span class="label label-primary">Total</span>
-						<input type="numeric"  disabled class="form-control" value="${total}" name="cantidad"/> 
-						<a href="<%=request.getContextPath()%>/carrito/comprar" class="btn btn-primary btn-block opcionesCarrito">Confirmar</a>
+						<input type="number" min="1"  disabled class="form-control" value="${total}" name="cantidad"/> 
+						<a href="<%=request.getContextPath()%>/carrito/confirmarCompra" class="btn btn-primary btn-block opcionesCarrito">Confirmar</a>
 				 		<input type="button" onclick="vaciarCarritoCompras()" class="btn btn-danger btn-block opcionesCarrito" value="Cancelar"/>
 				 	</div>
 	            </div>
@@ -131,5 +127,10 @@
         <!-- /.row -->
 	
 	</div>
+		<!-- Scripts -->
+   	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
+	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
+	<script src="<%=request.getContextPath()%>/js/bootstrap.js" ></script>
+	<!-- End Scripts -->
 </body>
 </html>
