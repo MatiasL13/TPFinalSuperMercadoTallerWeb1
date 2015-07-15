@@ -352,7 +352,7 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
         do {
           out.write("\r\n");
           out.write("\t\t\t\t\t\t\t\t    \t<div class=\"form-group\">\r\n");
-          out.write("\t\t\t\t\t        \t\t\t\t<input  class=\"form-control number\" type=\"number\" name=\"cantidad\" id=\"cantAdd_");
+          out.write("\t\t\t\t\t        \t\t\t\t<input  class=\"form-control number\" type=\"number\" name=\"cantidad\" min=\"1\" id=\"cantAdd_");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.nombre}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write("\" required/>\r\n");
           out.write("\t\t\t\t\t   \t\t\t\t\t </div>\r\n");
@@ -437,7 +437,7 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
         do {
           out.write("\r\n");
           out.write("\t\t\t\t\t\t\t\t    \t<div class=\"form-group\">\r\n");
-          out.write("\t\t\t\t\t        \t\t\t\t<input  class=\"form-control number\" type=\"number\" name=\"cantidad\" id=\"cantRemove_");
+          out.write("\t\t\t\t\t        \t\t\t\t<input  class=\"form-control number\" type=\"number\" min=\"1\" name=\"cantidad\" id=\"cantRemove_");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.nombre}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write("\" required/>\r\n");
           out.write("\t\t\t\t\t   \t\t\t\t\t </div>\r\n");
