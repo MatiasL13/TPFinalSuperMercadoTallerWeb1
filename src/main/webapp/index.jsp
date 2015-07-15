@@ -3,13 +3,16 @@
 
 <%@	taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@	taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+	<!-- CSS -->
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/small-business.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css"/>
-	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
+	
+	<!-- Scripts -->
+   	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
 	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
 	<script src="<%=request.getContextPath()%>/js/bootstrap.js" ></script>
-
+	<!-- End Scripts -->
 
 	<title>:: Supermercado ::</title>
 </head>
@@ -31,7 +34,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="<%=request.getContextPath()%>">Inicio</a>
+                        <a class="page-scroll" id="home" href="<%=request.getContextPath()%>">Inicio</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="<%=request.getContextPath()%>/carrito/ver">Carrito</a>
@@ -62,9 +65,6 @@
         </div>
         <!-- /.row -->
 
-        <hr>
-
-
         <!-- Content Row -->
         <div class="row">
             <div class="col-md-4">
@@ -76,7 +76,7 @@
 				acumulado en el carrito. Esta pantalla tiene dos botones: cancelar, que elimina todo lo
 				agregado al carrito y lo restituye al stock; y confirmar que lleva a una pantalla donde se
 				muestra como queda el carrito y su precio final</p>
-                <a class="btn btn-default" href="<%=request.getContextPath()%>/carrito/ver">Comprar!</a>
+                <a class="btn btn-warning" href="<%=request.getContextPath()%>/carrito/ver">Comprar!</a>
             </div>
             <!-- /.col-md-4 -->
             <div class="col-md-4">
@@ -87,28 +87,24 @@
 					Una pantalla para agregar stock a determinado producto, es decir se suma a lo que
 					tiene
 					Una pantalla para eliminar el stock de un producto</p>
-                <a class="btn btn-default" href="<%=request.getContextPath()%>/stock/ver">Ingresar!</a>
+                <a class="btn btn-warning" href="<%=request.getContextPath()%>/stock/ver">Ingresar!</a>
             </div>
             <!-- /.col-md-4 -->
             <div class="col-md-4">
                 <h2>Más información   <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></h2>
                 <p>Acerca del grupo de trabajo</p>
-                <a class="btn btn-default" href="#">More Info</a>
+                <a class="btn btn-warning" href="#">More Info</a>
             </div>
             <!-- /.col-md-4 -->
         </div>
         <!-- /.row -->
 
         <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Grupo de trabajo</p>
-                    <p>Taller Web 1 - Unlam</p>
-                    
-                </div>
-            </div>
-        </footer>
+		<footer class="footer">
+		      <div class="container">
+		        <h4 class="text-muted">Grupo Taller Web 1 - Unlam</h4>
+		      </div>
+	    </footer>
 
     </div>
     <!-- /.container -->
