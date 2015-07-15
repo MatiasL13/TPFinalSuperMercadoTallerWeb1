@@ -63,7 +63,7 @@ public final class agregarACarrito_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\r\n");
       out.write(" <html>\r\n");
       out.write("<head>\r\n");
-      out.write("\r\n");
+      out.write("<link rel=\"shortcut icon\" href=\"/supermercado/css/img/logo.png\">\r\n");
       out.write("\r\n");
       out.write("\r\n");
       out.write("\t<!-- CSS -->\r\n");
@@ -76,7 +76,7 @@ public final class agregarACarrito_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\t<link rel=\"stylesheet\" href=\"");
       out.print(request.getContextPath());
       out.write("/css/style.css\"/>\r\n");
-      out.write("\t\r\n");
+      out.write("\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">\r\n");
       out.write("\t<!-- Scripts -->\r\n");
       out.write("   \t<script src=\"");
       out.print(request.getContextPath());
