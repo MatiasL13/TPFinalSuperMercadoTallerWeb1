@@ -263,7 +263,9 @@ public final class agregarACarrito_jsp extends org.apache.jasper.runtime.HttpJsp
         do {
           out.write("\r\n");
           out.write("\t\t\t\t\t   \t\t<div class=\"form-group\">\r\n");
-          out.write("\t\t        \t\t\t\t<input type=\"number\" min=\"1\" class=\"form-control number\" name=\"cantidad\"  required id=\"cantidad_");
+          out.write("\t\t        \t\t\t\t<input type=\"number\" min=\"0\" max=\"");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.value}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+          out.write("\" class=\"form-control number\" name=\"cantidad\"  required id=\"cantidad_");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.nombre}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write("\"/>\r\n");
           out.write("\t\t   \t\t\t\t\t </div>\r\n");
