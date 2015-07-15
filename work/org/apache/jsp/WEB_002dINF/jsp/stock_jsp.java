@@ -360,9 +360,7 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
           if (_jspx_meth_form_005finput_005f1(_jspx_th_form_005fform_005f1, _jspx_page_context, _jspx_push_body_count_form_005fform_005f1))
             return true;
           out.write("\r\n");
-          out.write("\t\t\t\t\t\t\t\t\t\t<input class=\"btn btn-info \" type=\"button\" onclick=\"validaAgregaStock('");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.nombre}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("')\" value=\"+\">\r\n");
+          out.write("\t\t\t\t\t\t\t\t\t\t<input class=\"btn btn-info \" type=\"submit\" value=\"+\">\r\n");
           out.write("\t\t\t\t\t\t\t\t    ");
           int evalDoAfterBody = _jspx_th_form_005fform_005f1.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -447,9 +445,7 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
           if (_jspx_meth_form_005finput_005f2(_jspx_th_form_005fform_005f2, _jspx_page_context, _jspx_push_body_count_form_005fform_005f2))
             return true;
           out.write("\r\n");
-          out.write("\t\t\t\t\t\t\t\t\t\t<input class=\"btn btn-danger \" type=\"button\" onclick=\"validaQuitaStock('");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${dato.key.nombre}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("')\" value=\"-\">\r\n");
+          out.write("\t\t\t\t\t\t\t\t\t\t<input class=\"btn btn-danger \" type=\"submit\" value=\"-\">\r\n");
           out.write("\t\t\t\t\t\t\t\t    ");
           int evalDoAfterBody = _jspx_th_form_005fform_005f2.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

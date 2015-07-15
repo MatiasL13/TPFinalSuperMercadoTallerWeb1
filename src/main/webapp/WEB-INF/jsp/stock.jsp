@@ -89,7 +89,7 @@
 					        				<input  class="form-control number"name="cantidad" id="cantAdd_${dato.key.nombre}" required/>
 					   					 </div>
 								        <form:input type="hidden"class="form-control" path="nombre" value="${dato.key.nombre}"></form:input>
-										<input class="btn btn-info " type="button" onclick="validaAgregaStock('${dato.key.nombre}')" value="+">
+										<input class="btn btn-info " type="submit" value="+">
 								    </form:form>
 								    
 								    <form:form method="post" action="eliminarStock" class="form-inline" id="frmQuitaStock_${dato.key.nombre}" >
@@ -97,7 +97,7 @@
 					        				<input  class="form-control number"name="cantidad" id="cantRemove_${dato.key.nombre}" required/>
 					   					 </div>
 								        <form:input type="hidden"class="form-control" path="nombre" value="${dato.key.nombre}"></form:input>
-										<input class="btn btn-danger " type="button" onclick="validaQuitaStock('${dato.key.nombre}')" value="-">
+										<input class="btn btn-danger " type="submit" value="-">
 								    </form:form>
 							</td>
 						</tr>

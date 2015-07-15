@@ -89,7 +89,7 @@ function showMsj(idMsj){
 function cancelarVaciarCarrito(){
 	$("#msjAlert00").addClass("hidden");
 }
-
+/*
 function validaAgregaStock(idElemento){
 	var cantidad = $("#cantAdd_"+idElemento).val();
 	var submit=true;
@@ -141,7 +141,7 @@ function validaQuitaStock(idElemento){
 	}
 	
 }//End function validaQuitaStock
-
+*/
 
 function validaAgregarProducto(){
 	//Obtengo los valores
