@@ -143,6 +143,39 @@ function validaQuitaStock(idElemento){
 }//End function validaQuitaStock
 
 
+function validaAgregarProducto(){
+	//Obtengo los valores
+	var nombre = $("#nombreProducto").val();
+	var precio = $("#precioProducto").val();
+	var submit = true;
+	
+	//Primero controlo que el nombre sea correcto
+	if(nombre="" || nombre.lenght==0){
+		submit = false;
+	}//End if
+	
+	//Controlo que el precio sea un numero
+	if(isNaN(precio)){
+		submit = false;
+	}
+
+	//Controlo que el precio no sea nulo
+	if(precio == "" || precio.lenght==0){
+		submit = false;
+	}
+
+	//Controlo que el precio no sea negativo
+	if(precio<0){
+		submit = false;
+	}
+	
+	//Si no hubo problemas hago el submit
+	if(submit==true){
+		$("#frmAgregarProducto").submit();
+	}
+	
+}//End function validaAgregarProducto
+
 $('.number').keydown(function(event) {
                // Allow special chars + arrows 
                if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 
