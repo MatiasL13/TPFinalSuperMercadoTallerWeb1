@@ -100,7 +100,7 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<input type="number" min="1" class="form-control number" id="cantidadDescuento" name="cantidad"/> 
+								<input type="number" min="1" class="form-control number" id="cantidadDescuento" name="cantidad" required/> 
 							</div>
 							<div class="form-group">
 								<input onclick="validarDescuento()" class="btn btn-primary  " type="button" value="Aplicar descuento">
