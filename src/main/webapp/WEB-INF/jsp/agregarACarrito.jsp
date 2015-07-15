@@ -1,14 +1,14 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
  <html>
 <head>
-
+<link rel="shortcut icon" href="/supermercado/css/img/logo.png">
 <%@	taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@	taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 	<!-- CSS -->
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/small-business.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css"/>
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Scripts -->
    	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
 	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
