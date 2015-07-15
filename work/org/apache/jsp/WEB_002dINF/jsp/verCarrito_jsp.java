@@ -301,7 +301,7 @@ public final class verCarrito_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\t\t\t\t\t\t\t\t</select>\n");
           out.write("\t\t\t\t\t\t\t</div>\n");
           out.write("\t\t\t\t\t\t\t<div class=\"form-group\">\n");
-          out.write("\t\t\t\t\t\t\t\t<input type=\"number\" min=\"1\" class=\"form-control number\" id=\"cantidadDescuento\" name=\"cantidad\"/> \n");
+          out.write("\t\t\t\t\t\t\t\t<input type=\"number\" min=\"1\" class=\"form-control number\" id=\"cantidadDescuento\" name=\"cantidad\" required/> \n");
           out.write("\t\t\t\t\t\t\t</div>\n");
           out.write("\t\t\t\t\t\t\t<div class=\"form-group\">\n");
           out.write("\t\t\t\t\t\t\t\t<input onclick=\"validarDescuento()\" class=\"btn btn-primary  \" type=\"button\" value=\"Aplicar descuento\">\n");
