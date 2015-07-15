@@ -70,11 +70,11 @@
 				<td>
 					    <form:form method="post" action="/carrito/agregar/ingresar" id="frm_${dato.key.nombre}" class="form-inline" >
 					   		<div class="form-group">
-		        				<input  class="form-control number" name="cantidad"  required id="cantidad_${dato.key.nombre}"/>
+		        				<input type="number" min="0" max="${dato.value}" class="form-control number" name="cantidad"  required id="cantidad_${dato.key.nombre}"/>
 		   					 </div>
 					        <form:input type="hidden"class="form-control" path="nombre" value="${dato.key.nombre}"></form:input>
 					        <form:input type="hidden"class="form-control" path="precio"  value="${dato.key.precio}"></form:input>
-							<input class="btn btn-success agregarProductoACarrito" onclick="checkMoverCarrito('${dato.key.nombre}')" type="button" value="Mover a Carrito">
+							<input class="btn btn-success agregarProductoACarrito" type="submit" value="Mover a Carrito">
 						</form:form>
 				</td>
 		

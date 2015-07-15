@@ -1,3 +1,4 @@
+/*
 function checkMoverCarrito(idNameArticulo){
 	//Primero oculto y vacio los cuadros de mensaje
 	$("#msjError00").addClass("hidden");
@@ -51,7 +52,7 @@ function checkMoverCarrito(idNameArticulo){
 	}
 
 }//End function checkMoverCarrito
-
+*/
 function cancelaMoverCarrito(){
 	$("#msjError00").addClass("hidden");
 	$('.agregarProductoACarrito').attr("disabled",false)
