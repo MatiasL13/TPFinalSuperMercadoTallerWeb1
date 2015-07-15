@@ -39,6 +39,24 @@ public class CarritoController {
 		return modelAndView;
 	}
 	
+	@RequestMapping("/confirmarCompra")
+	public ModelAndView confirmarCompra() {
+		
+		List<Producto> productos = Carrito.getInstance().verProductos();
+		double totalSinDescuentos = Carrito.getInstance().totalSinDescuentos();
+		double totalAhorro = Carrito.getInstance().totalAhorros();
+		double total = Carrito.getInstance().total();
+		
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.addObject("productos", productos);
+		modelAndView.addObject("totalSinDescuentos", totalSinDescuentos);
+		modelAndView.addObject("totalAhorro", totalAhorro);
+		modelAndView.addObject("total", total);
+		//Carrito.getInstance().vaciar();
+		modelAndView.setViewName("confirmarCompra");
+		return modelAndView;
+	}
+	
 	@RequestMapping("/listarProductos")
 	public ModelAndView mostrarStock(@RequestParam(required=false) boolean success) {
 		String msjCargaOk = null;

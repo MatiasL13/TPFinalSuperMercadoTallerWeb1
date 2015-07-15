@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/small-business.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+	
 
 	<title>:: Supermercado ::</title>
 </head>
@@ -49,19 +49,7 @@
 		</div>
 
         
-		<!-- COMIENZO MENSAJES -->
-		<div class="row">
-			<div id="msjAlert00" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center bg-warning hidden">
-				<p><span class="glyphicon glyphicon-warning-sign"></span>&nbsp; ATENCI&Oacute;N: Est&aacute; seguro de querer cancelar su compra? Esta operación vaciar&aacute; su carrito de compras.</p>
-				<a href="<%=request.getContextPath()%>/carrito/vaciar" class="btn btn-warning">Aceptar</a>&nbsp;
-				<input type="button" onclick="cancelarVaciarCarrito()" class="btn btn-warning" value="cancelar"/>
-			</div>
-			<div id="msjAlert01" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center bg-warning hidden">
-				<p><span class="glyphicon glyphicon-warning-sign"></span>&nbsp; Por favor ingrese un descuento.</p>
-				<input type="button" onclick="hideMsj('msjAlert01')" class="btn btn-warning" value="Aceptar"/>
-			</div>
-		</div>
-		<!-- FIN MENSAJES -->
+		
 		
 				
         <!-- Heading Row -->
@@ -86,39 +74,17 @@
             </div>
             <!-- /.col-md-8 -->
             <div class="col-md-4">
-	            <div class="row">
-		            <div class="col-md-12">
-						<a  class="btn btn-success btn-block opcionesCarrito" href="<%=request.getContextPath()%>/carrito/listarProductos">agregar producto</a>
-					</div>
-					 <div class="col-md-12">
-					 <h4>Descuentos</h4>
-						 <form:form method="post" id="frmCalculoDescuento" action="/carrito/agregar/descuento"  class="form-inline" >
-							<div class="form-group">
-								<select name="tipo" class="form-control">
-								  <option value="0">Porcentaje</option>
-								  <option value="1">Monto</option>
-								</select>
-							</div>
-							<div class="form-group">
-								<input type="number" min="1" class="form-control number" id="cantidadDescuento" name="cantidad"/> 
-							</div>
-							<div class="form-group">
-								<input onclick="validarDescuento()" class="btn btn-primary  " type="button" value="Aplicar descuento">
-							</div>
-						</form:form>
-					</div>
-				</div>
+
 				<div class="separador"></div>
 				<div class="row">
 					<div class="col-md-12">
 						<span class="label label-warning">Total Sin Descuento</span>
 						<input type="numeric"  disabled class="form-control" name="" value= "${totalSinDescuentos}"/> 
 						<span class="label label-success">Ahorro</span>
-						<input type="number" min="1"  disabled class="form-control"  value="${totalAhorro}"name="cantidad"/> 
+						<input type="numeric"  disabled class="form-control"  value="${totalAhorro}"name="cantidad"/> 
 						<span class="label label-primary">Total</span>
-						<input type="number" min="1"  disabled class="form-control" value="${total}" name="cantidad"/> 
-						<a href="<%=request.getContextPath()%>/carrito/confirmarCompra" class="btn btn-primary btn-block opcionesCarrito">Confirmar</a>
-				 		<input type="button" onclick="vaciarCarritoCompras()" class="btn btn-danger btn-block opcionesCarrito" value="Cancelar"/>
+						<input type="numeric"  disabled class="form-control" value="${total}" name="cantidad"/> 
+						
 				 	</div>
 	            </div>
             </div>
@@ -127,7 +93,7 @@
         <!-- /.row -->
 	
 	</div>
-		<!-- Scripts -->
+	<!-- Scripts -->
    	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
 	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
 	<script src="<%=request.getContextPath()%>/js/bootstrap.js" ></script>

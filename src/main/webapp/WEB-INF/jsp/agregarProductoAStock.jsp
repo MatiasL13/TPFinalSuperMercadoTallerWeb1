@@ -9,11 +9,7 @@
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/small-business.css"/>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Scripts -->
-   	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
-	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
-	<script src="<%=request.getContextPath()%>/js/bootstrap.js" ></script>
-	<!-- End Scripts -->
+
 
 	<title>:: Supermercado ::</title>
 </head>
@@ -70,18 +66,23 @@
 			   <form:form method="post" action="/stock/agregar/ingresar" id="frmAgregarProducto" class="">
 				   <div class="form-group">
 				   <form:label path="nombre">nombre</form:label>
-				        <form:input autofocus="true" class="form-control" id="nombreProducto"  path="nombre" required="true"></form:input> 
+				        <form:input autofocus="true" class="form-control alphaonly" id="nombreProducto"  path="nombre" required="true"></form:input> 
 				    </div>
 				        
 				        
 				    <div class="form-group"><form:label path="precio">precio</form:label>
-				        <form:input  class="form-control number" required="true" id="precioProducto" path="precio"></form:input>
+				        <form:input  class="form-control number"  type="number" min="1" required="true" id="precioProducto" path="precio"></form:input>
 				    </div>
 				   
-		            <input class="btn btn-success" type="button" onclick="validaAgregarProducto()" value="Agregar Producto">  
+		            <input class="btn btn-success" type="submit"  value="Agregar Producto">  
 				</form:form>
 		 </div>
 	</div>
+		<!-- Scripts -->
+   	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
+	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
+	<script src="<%=request.getContextPath()%>/js/bootstrap.js" ></script>
+	<!-- End Scripts -->
  </body>
  </html>
  
