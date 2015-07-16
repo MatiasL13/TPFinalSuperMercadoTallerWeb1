@@ -76,8 +76,11 @@
 				   
 		            <input class="btn btn-success" type="submit"  value="Agregar Producto">  
 				</form:form>
+				
 		 </div>
+
 	</div>
+	<a class="btn btn-info "  style="margin-left: 100px;" href="<%=request.getContextPath()%>/stock/ver">Volver al stock </a> 
 		<!-- Scripts -->
    	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
 	<script src="<%=request.getContextPath()%>/js/script.js" ></script>
