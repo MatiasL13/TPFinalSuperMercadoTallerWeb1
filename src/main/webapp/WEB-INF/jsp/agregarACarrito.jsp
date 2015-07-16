@@ -49,7 +49,7 @@
 			<h1>Agregar al carrito</h1>
 		</div>
 		<div class="col-md-12 ">
-			<div id="msjError00" class="alert alert-danger hidden text-center mensajes" role="alert"></div>
+			<div id="msjError00" class="alert alert-danger  alert-dismissible hidden text-center mensajes" role="alert"></div>
 			<div id="msjOK" class="alert alert-success ${status} text-center" role="alert">
 				<p class="bg-success text-center ">
 					<span class="glyphicon glyphicon-ok"></span>&nbsp;${msjCargaOk}
@@ -62,23 +62,25 @@
 				<td>Nombre</td>
 				<td>Precio</td>
 			</tr>
+			<c:set var="sum" value="${0}"/>  
 			<c:forEach  items="${stock}" var="dato">
 			<tr>
 				<td>${dato.key.nombre}</td>
 				<td>${dato.key.precio}</td>
-				<td>${dato.value}<input type="hidden" id="stock_${dato.key.nombre}" value="${dato.value}"/></td>
+				<td><input type="hidden" id="stock${sum}" value="${dato.value}"/></td>
 				<td>
-					    <form:form method="post" action="/carrito/agregar/ingresar" id="frm_${dato.key.nombre}" class="form-inline" >
+					    <form:form method="post" action="/carrito/agregar/ingresar" id="frm${sum}" class="form-inline" >
 					   		<div class="form-group">
-		        				<input type="number" min="0" max="${dato.value}" class="form-control number" name="cantidad"  required id="cantidad_${dato.key.nombre}"/>
+		        				<input type="number" min="0"  class=" form-control number" name="cantidad"  required id="cantidad${sum}"/>
 		   					 </div>
 					        <form:input type="hidden"class="form-control" path="nombre" value="${dato.key.nombre}"></form:input>
 					        <form:input type="hidden"class="form-control" path="precio"  value="${dato.key.precio}"></form:input>
-							<input class="btn btn-success agregarProductoACarrito" type="submit" value="Mover a Carrito">
+							<input class="btn btn-success agregarProductoACarrito butonAgregar" id="${sum}"type="submit" value="Mover a Carrito">
 						</form:form>
 				</td>
 		
 			</tr>
+			<c:set var="sum" value="${sum + 1}"/>      
 			</c:forEach>
 		
 			</table>

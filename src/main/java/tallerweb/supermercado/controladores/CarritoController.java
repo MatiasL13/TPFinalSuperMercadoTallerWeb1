@@ -52,8 +52,8 @@ public class CarritoController {
 		modelAndView.addObject("totalSinDescuentos", totalSinDescuentos);
 		modelAndView.addObject("totalAhorro", totalAhorro);
 		modelAndView.addObject("total", total);
-		Carrito.getInstance().vaciar();
 		modelAndView.setViewName("confirmarCompra");
+		//Carrito.getInstance().vaciar();
 		return modelAndView;
 	}
 	

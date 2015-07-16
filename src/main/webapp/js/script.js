@@ -1,63 +1,56 @@
-/*
-function checkMoverCarrito(idNameArticulo){
+
+$('.butonAgregar').click(function(e){
+	e.preventDefault();
 	//Primero oculto y vacio los cuadros de mensaje
 	$("#msjError00").addClass("hidden");
 	$("#msjError00").empty();
 	$("#msjOK").addClass("hidden");
-
+	var cantidad=$(this).attr('id'); // segun el id del boton se realizan las  validaciones
 
 	//Obtengo el stock del producto
-	var stockProducto = $("#stock_"+idNameArticulo).val();
+	var stockProducto = $("#stock"+cantidad).val();
 	stockProducto = parseInt(stockProducto);
 	//Obtengo la cantidad solicitada
-	var cantidadSolicitada = $("#cantidad_"+idNameArticulo).val();
+	var cantidadSolicitada = $("#cantidad"+cantidad).val();
 	cantidadSolicitada = parseInt(cantidadSolicitada);
 
-	if(cantidadSolicitada != '' && !isNaN(cantidadSolicitada) ){//Si lacantidad solicitada esta vacia o no es un numero 
 		if(stockProducto>0){//Si el articulo tiene stock sigo controlando
 			
 			if(cantidadSolicitada>stockProducto){//Controlo que la cantidad solicitada no sea mayor a la que hay en stock
 				//cargo el mensaje en el cuadro de mensajes
-				$("#msjError00").append("<div id='error' class=''><span  class='glyphicon glyphicon-warning-sign col-md-12'>ATENCI&Oacute;N: Solo se podr&aacute;n cargar "
+				$("#msjError00").append("<div id='error'  role='alert' class=''><span  class='glyphicon glyphicon-warning-sign col-md-12'>ATENCI&Oacute;N: Solo se podr&aacute;n cargar "
 						+stockProducto
-						+" unidades. Desea Continuar?</span>" 
-						+"<div class='text-center col-md-offset-5 '><input type='button' onclick='checkMoverCarrito(\""+idNameArticulo+"\")' class='btn btn-success col-md-2 marginTop10' value='aceptar'/><input type='button' onclick='cancelaMoverCarrito(\""+idNameArticulo+"\")' class='btn btn-danger col-md-2 marginTop10' value='cancelar'/></div></div>");
+						+" unidades.</span>" 
+						+"<div class='text-center col-md-offset-5 '><input type='button' class='btn btn-success col-md-2 marginTop10 butonAgregar' data-dismiss='alert'  value='aceptar'/></div></div>");
 				//lo muestro
 				$("#msjError00").removeClass("hidden");
 				//Cargo la nueva cantidad en el input
-				$("#cantidad_"+idNameArticulo).val(stockProducto);
+				$("#cantidad"+cantidad).val(stockProducto);
 				
 				$('.agregarProductoACarrito').attr("disabled",true)
 			}else{
 				$('.agregarProductoACarrito').attr("disabled",false)
-				$("#frm_"+idNameArticulo).submit();
+				$("#frm"+cantidad).submit();
 				//alert("realizo el submit")
 			}
 		}else{
 			//cargo el mensaje en el cuadro de mensajes
 			$("#msjError00").append("<div id='error' class='text-center'><span  class='glyphicon glyphicon-warning-sign'></span>&nbsp;ATENCI&Oacute;N: El art&iacute;culo que intenta cargar no posee stock." 
-					+"</br><input type='button' onclick='cancelaMoverCarrito(\""+idNameArticulo+"\")' class='btn btn-danger' value='aceptar'/></div>");
+					+"</br><input type='button' id='aceptarCantidad' class='btn btn-danger cancelar ' data-dismiss='alert' value='aceptar'/></div>");
 			//lo muestro
 			$("#msjError00").removeClass("hidden");
 			
 		}//End if stockProducto>0
 		
-	}else{
-		//cargo el mensaje en el cuadro de mensajes
-		$("#msjError00").append("<div id='error' class='text-center'><span  class='glyphicon glyphicon-warning-sign'></span>&nbsp;ATENCI&Oacute;N: Por favor revise que la cantidad a cargar sea un n&uacute;mero v&aacute;lido." 
-				+"</br><input type='button' onclick='cancelaMoverCarrito(\""+idNameArticulo+"\")' class='btn btn-danger' value='aceptar'/></div>");
-		//lo muestro
-		$("#msjError00").removeClass("hidden");
-		
-	}
+	
 
-}//End function checkMoverCarrito
-*/
-function cancelaMoverCarrito(){
+});//End function checkMoverCarrito
+
+$('#msjError00').on('close.bs.alert', function () { // llama al tocar el boton cancelar
 	$("#msjError00").addClass("hidden");
 	$('.agregarProductoACarrito').attr("disabled",false)
 	$("#error").remove();
-}//End function cancelaMoverCarrito
+})
 
 
 function vaciarCarritoCompras(){

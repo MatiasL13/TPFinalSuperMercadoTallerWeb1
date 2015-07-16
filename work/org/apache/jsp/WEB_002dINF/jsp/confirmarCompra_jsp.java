@@ -70,17 +70,7 @@ public final class confirmarCompra_jsp extends org.apache.jasper.runtime.HttpJsp
       out.print(request.getContextPath());
       out.write("/css/style.css\"/>\n");
       out.write("\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">\n");
-      out.write("\t<!-- Scripts -->\n");
-      out.write("   \t<script src=\"");
-      out.print(request.getContextPath());
-      out.write("/js/jquery.js\" ></script>\n");
-      out.write("\t<script src=\"");
-      out.print(request.getContextPath());
-      out.write("/js/script.js\" ></script>\n");
-      out.write("\t<script src=\"");
-      out.print(request.getContextPath());
-      out.write("/js/bootstrap.js\" ></script>\n");
-      out.write("\t<!-- End Scripts -->\n");
+      out.write("\t\n");
       out.write("\n");
       out.write("\t<title>:: Supermercado ::</title>\n");
       out.write("</head>\n");
@@ -176,6 +166,17 @@ public final class confirmarCompra_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("        <!-- /.row -->\n");
       out.write("\t\n");
       out.write("\t</div>\n");
+      out.write("\t<!-- Scripts -->\n");
+      out.write("   \t<script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/jquery.js\" ></script>\n");
+      out.write("\t<script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/script.js\" ></script>\n");
+      out.write("\t<script src=\"");
+      out.print(request.getContextPath());
+      out.write("/js/bootstrap.js\" ></script>\n");
+      out.write("\t<!-- End Scripts -->\n");
       out.write("</body>\n");
       out.write("</html>");
     } catch (Throwable t) {
@@ -199,9 +200,9 @@ public final class confirmarCompra_jsp extends org.apache.jasper.runtime.HttpJsp
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent(null);
-    // /WEB-INF/jsp/confirmarCompra.jsp(68,5) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/confirmarCompra.jsp(68,5) '${productos}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${productos}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/confirmarCompra.jsp(68,5) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/confirmarCompra.jsp(64,5) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/confirmarCompra.jsp(64,5) '${productos}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${productos}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/confirmarCompra.jsp(64,5) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVar("dato");
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
