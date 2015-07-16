@@ -62,7 +62,11 @@ public class Carrito {
      */
     public Double total() {
         // Implementar
-    	return totalSinDescuentos() - totalAhorros();
+    	Double total = totalSinDescuentos() - totalAhorros();
+    	if(total<0.0){
+    		total=0.0;
+    	}
+    	return total;
     }
 
     /**
