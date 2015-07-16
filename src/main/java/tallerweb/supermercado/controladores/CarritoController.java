@@ -52,7 +52,7 @@ public class CarritoController {
 		modelAndView.addObject("totalSinDescuentos", totalSinDescuentos);
 		modelAndView.addObject("totalAhorro", totalAhorro);
 		modelAndView.addObject("total", total);
-		Carrito.getInstance().vaciar();
+		//Carrito.getInstance().vaciar();
 		modelAndView.setViewName("confirmarCompra");
 		return modelAndView;
 	}
