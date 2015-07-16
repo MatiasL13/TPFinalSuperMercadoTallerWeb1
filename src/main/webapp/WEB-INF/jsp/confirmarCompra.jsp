@@ -84,6 +84,7 @@
 						<input type="numeric"  disabled class="form-control"  value="${totalAhorro}"name="cantidad"/> 
 						<span class="label label-primary">Total</span>
 						<input type="numeric"  disabled class="form-control" value="${total}" name="cantidad"/> 
+						<a href="<%=request.getContextPath()%>/carrito/pagar" class="btn btn-primary btn-block opcionesCarrito">PAGAR</a>
 						
 				 	</div>
 	            </div>
@@ -93,6 +94,7 @@
         <!-- /.row -->
 	
 	</div>
+
 	<!-- Scripts -->
    	<script src="<%=request.getContextPath()%>/js/jquery.js" ></script>
 	<script src="<%=request.getContextPath()%>/js/script.js" ></script>

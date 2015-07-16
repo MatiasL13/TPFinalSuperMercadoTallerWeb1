@@ -52,13 +52,15 @@ public class CarritoController {
 		modelAndView.addObject("totalSinDescuentos", totalSinDescuentos);
 		modelAndView.addObject("totalAhorro", totalAhorro);
 		modelAndView.addObject("total", total);
-<<<<<<< HEAD
-=======
-		//Carrito.getInstance().vaciar();
->>>>>>> bcd1b70d37b0149ce063859b5566a848c13bffd9
 		modelAndView.setViewName("confirmarCompra");
 		//Carrito.getInstance().vaciar();
 		return modelAndView;
+	}
+	
+	@RequestMapping("/pagar")
+	public String pagar() {
+		Carrito.getInstance().vaciar();
+		return "redirect:/carrito/ver";
 	}
 	
 	@RequestMapping("/listarProductos")
